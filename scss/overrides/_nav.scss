@@ -20,5 +20,5 @@
 }
 
 .card .nav-tabs {
-  @include card-fit-x();
+  @include card-fit-x(true);
 }

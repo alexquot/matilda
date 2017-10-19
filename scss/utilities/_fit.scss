@@ -1,5 +1,5 @@
 // Basics
-@mixin fit-x($value, $restore-padding: true) {
+@mixin fit-x($value, $restore-padding: false) {
   margin-left: -$value;
   margin-right: -$value;
   @if $restore-padding {
@@ -8,7 +8,7 @@
   }
 }
 
-@mixin fit-y($value, $restore-padding: true) {
+@mixin fit-y($value, $restore-padding: false) {
   margin-top: -$value;
   margin-bottom: -$value;
   @if $restore-padding {
@@ -19,27 +19,40 @@
 
 // Card specific
 // // Mixins
-@mixin card-fit-x($restore-padding: true) {
+@mixin card-fit-x($restore-padding: false) {
   @include fit-x($card-spacer-x, $restore-padding);
 }
 
-@mixin card-fit-y-body($restore-padding: true) {
+@mixin card-fit-y-body($restore-padding: false) {
   @include fit-y($card-spacer-x, $restore-padding);
 }
 
-@mixin card-fit-y-header($restore-padding: true) {
+@mixin card-fit-y-header($restore-padding: false) {
   @include fit-y($card-spacer-y, $restore-padding);
 }
 
 // // Classes
 .card-fit-x {
+  @include fit-x($card-spacer-x !important, false);
+}
+
+.card-body-fit-y {
+  @include fit-y($card-spacer-x !important, false);
+}
+
+.card-header-fit-y {
+  @include fit-y($card-spacer-y !important, false);
+}
+
+// // -rp stands for 'restore padding'
+.card-fit-x-rp {
   @include fit-x($card-spacer-x !important, true);
 }
 
-.card-fit-y-body {
+.card-body-fit-y-rp {
   @include fit-y($card-spacer-x !important, true);
 }
 
-.card-fit-y-header {
+.card-header-fit-y-rp {
   @include fit-y($card-spacer-y !important, true);
 }
