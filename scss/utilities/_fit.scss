@@ -1,0 +1,45 @@
+// Basics
+@mixin fit-x($value, $restore-padding: true) {
+  margin-left: -$value;
+  margin-right: -$value;
+  @if $restore-padding {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}
+
+@mixin fit-y($value, $restore-padding: true) {
+  margin-top: -$value;
+  margin-bottom: -$value;
+  @if $restore-padding {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+// Card specific
+// // Mixins
+@mixin card-fit-x($restore-padding: true) {
+  @include fit-x($card-spacer-x, $restore-padding);
+}
+
+@mixin card-fit-y-body($restore-padding: true) {
+  @include fit-y($card-spacer-x, $restore-padding);
+}
+
+@mixin card-fit-y-header($restore-padding: true) {
+  @include fit-y($card-spacer-y, $restore-padding);
+}
+
+// // Classes
+.card-fit-x {
+  @include fit-x($card-spacer-x !important, true);
+}
+
+.card-fit-y-body {
+  @include fit-y($card-spacer-x !important, true);
+}
+
+.card-fit-y-header {
+  @include fit-y($card-spacer-y !important, true);
+}
