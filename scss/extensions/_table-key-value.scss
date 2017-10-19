@@ -1,0 +1,13 @@
+.table-key-value {
+  display: inline-block;
+
+  tr td:first-child {
+    padding-right: 1em;
+    color: theme-color("secondary");
+    text-align: right;
+  }
+
+  tr td:last-child {
+    text-align: left;
+  }
+}
