@@ -1,16 +1,28 @@
 .card-fit-x {
   margin-left: -1.25rem !important;
+  margin-right: -1.25rem !important; }
+
+.card-body-fit-y {
+  margin-top: -1.25rem !important;
+  margin-bottom: -1.25rem !important; }
+
+.card-header-fit-y {
+  margin-top: -1.25rem !important;
+  margin-bottom: -1.25rem !important; }
+
+.card-fit-x-rp {
+  margin-left: -1.25rem !important;
   margin-right: -1.25rem !important;
   padding-left: 1.25rem !important;
   padding-right: 1.25rem !important; }
 
-.card-fit-y-body {
+.card-body-fit-y-rp {
   margin-top: -1.25rem !important;
   margin-bottom: -1.25rem !important;
   padding-top: 1.25rem !important;
   padding-bottom: 1.25rem !important; }
 
-.card-fit-y-header {
+.card-header-fit-y-rp {
   margin-top: -1.25rem !important;
   margin-bottom: -1.25rem !important;
   padding-top: 0.75rem !important;
