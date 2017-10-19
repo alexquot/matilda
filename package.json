@@ -1,0 +1,19 @@
+{
+  "name": "matilda",
+  "version": "1.0.0",
+  "description": "A kinda Material theme for Bootstrap 4.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
+    "build": "node-sass scss/matilda.scss dist/matilda.css --include-path vendor",
+    "watch": "nodemon -e scss -x 'npm run build'"
+  },
+  "author": "Alex Quot",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "stylelint": "^8.2.0",
+    "stylelint-config-idiomatic-order": "^5.0.0"
+  }
+}

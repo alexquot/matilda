@@ -1,0 +1,17 @@
+.card {
+  @include elevation(2);
+
+  .card-header {
+    background-color: transparent;
+    border-radius: $border-radius;
+  }
+
+  .card {
+    border: 1px solid $table-border-color;
+    box-shadow: none;
+  }
+
+  .card-header-tabs {
+    border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  }
+}

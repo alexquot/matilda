@@ -1,0 +1,24 @@
+.nav-tabs {
+  .nav-item {
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    @include ripple($black);
+
+    border: 0;
+    color: theme-color("secondary");
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    border-bottom: 2px solid theme-color("primary");
+    margin-bottom: calc(#{$input-btn-border-width} - 2px);
+    background-color: transparent;
+    color: theme-color("secondary");
+  }
+}
+
+.card .nav-tabs {
+  @include card-fit();
+}
