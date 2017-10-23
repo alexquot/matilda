@@ -2,9 +2,9 @@
 @import "_variables";
 
 // Basics
-@import "../vendor/bootstrap/scss/functions";
+@import "bootstrap/functions";
 @import "overrides/_functions";
-@import "../vendor/bootstrap/scss/variables";
+@import "bootstrap/variables";
 
 // Theme specific utilities
 @import "utilities/_ripple";
@@ -12,64 +12,64 @@
 @import "utilities/_fit";
 
 // BS4 overrides
-@import "../vendor/bootstrap/scss/mixins";
-@import "../vendor/bootstrap/scss/root";
-@import "../vendor/bootstrap/scss/print";
-@import "../vendor/bootstrap/scss/reboot";
+@import "bootstrap/mixins";
+@import "bootstrap/root";
+@import "bootstrap/print";
+@import "bootstrap/reboot";
 
-@import "../vendor/bootstrap/scss/type";
+@import "bootstrap/type";
 @import "overrides/_type";
 
-@import "../vendor/bootstrap/scss/images";
-@import "../vendor/bootstrap/scss/code";
-@import "../vendor/bootstrap/scss/grid";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
 
-@import "../vendor/bootstrap/scss/tables";
+@import "bootstrap/tables";
 @import "overrides/_tables";
 
-@import "../vendor/bootstrap/scss/forms";
+@import "bootstrap/forms";
 @import "overrides/_forms";
 
-@import "../vendor/bootstrap/scss/buttons";
+@import "bootstrap/buttons";
 @import "overrides/_buttons";
 
-@import "../vendor/bootstrap/scss/transitions";
-@import "../vendor/bootstrap/scss/dropdown";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
 
-@import "../vendor/bootstrap/scss/button-group";
+@import "bootstrap/button-group";
 @import "overrides/button-group";
 
-@import "../vendor/bootstrap/scss/input-group";
-@import "../vendor/bootstrap/scss/custom-forms";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
 
-@import "../vendor/bootstrap/scss/nav";
+@import "bootstrap/nav";
 @import "overrides/_nav";
 
-@import "../vendor/bootstrap/scss/navbar";
+@import "bootstrap/navbar";
 @import "overrides/_navbar";
 
-@import "../vendor/bootstrap/scss/card";
+@import "bootstrap/card";
 @import "overrides/_card";
 
-@import "../vendor/bootstrap/scss/breadcrumb";
-@import "../vendor/bootstrap/scss/pagination";
-@import "../vendor/bootstrap/scss/badge";
-@import "../vendor/bootstrap/scss/jumbotron";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
 
-@import "../vendor/bootstrap/scss/alert";
+@import "bootstrap/alert";
 @import "overrides/_alert";
 
-@import "../vendor/bootstrap/scss/progress";
+@import "bootstrap/progress";
 @import "overrides/_progress";
 
-@import "../vendor/bootstrap/scss/media";
-@import "../vendor/bootstrap/scss/list-group";
-@import "../vendor/bootstrap/scss/close";
-@import "../vendor/bootstrap/scss/modal";
-@import "../vendor/bootstrap/scss/tooltip";
-@import "../vendor/bootstrap/scss/popover";
-@import "../vendor/bootstrap/scss/carousel";
-@import "../vendor/bootstrap/scss/utilities";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/utilities";
 
 @import "overrides/_links";
 
