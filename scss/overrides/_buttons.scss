@@ -32,3 +32,13 @@ $btn-flats:
     }
   }
 }
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &:not([disabled]):not(.disabled):active,
+    &:not([disabled]):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      @include elevation(2);
+    }
+  }
+}
