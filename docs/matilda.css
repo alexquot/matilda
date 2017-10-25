@@ -2436,6 +2436,30 @@ tbody.collapse.show {
   border-radius: 2px; }
   .btn-group .btn {
     box-shadow: none; }
+  .btn-group .btn-primary:not([disabled]):not(.disabled):active, .btn-group .btn-primary:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-primary.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-secondary:not([disabled]):not(.disabled):active, .btn-group .btn-secondary:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-secondary.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-success:not([disabled]):not(.disabled):active, .btn-group .btn-success:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-success.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-info:not([disabled]):not(.disabled):active, .btn-group .btn-info:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-info.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-warning:not([disabled]):not(.disabled):active, .btn-group .btn-warning:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-warning.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-danger:not([disabled]):not(.disabled):active, .btn-group .btn-danger:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-danger.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-light:not([disabled]):not(.disabled):active, .btn-group .btn-light:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-light.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
+  .btn-group .btn-dark:not([disabled]):not(.disabled):active, .btn-group .btn-dark:not([disabled]):not(.disabled).active,
+  .show > .btn-group .btn-dark.dropdown-toggle {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12); }
 
 .input-group {
   position: relative;
