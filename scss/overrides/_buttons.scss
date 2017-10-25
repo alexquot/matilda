@@ -33,12 +33,16 @@ $btn-flats:
   }
 }
 
-@each $color, $value in $theme-colors {
-  .btn-#{$color} {
-    &:not([disabled]):not(.disabled):active,
-    &:not([disabled]):not(.disabled).active,
-    .show > &.dropdown-toggle {
-      @include elevation(2);
+@mixin btn-active-fix($dp) {
+  @each $color, $value in $theme-colors {
+    .btn-#{$color} {
+      &:not([disabled]):not(.disabled):active,
+      &:not([disabled]):not(.disabled).active,
+      .show > &.dropdown-toggle {
+        @include elevation($dp);
+      }
     }
   }
 }
+
+@include btn-active-fix(2);
