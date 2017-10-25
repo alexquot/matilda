@@ -25,28 +25,31 @@ $green: #4caf50;
 $teal: #009688;
 $cyan: #00bcd4;
 
-$theme-colors: (
-  "primary": $indigo,
-  "secondary": $gray-600,
-  "success": $green,
-  "info": $cyan,
-  "warning": $orange,
-  "danger": $red,
-  "light": $gray-100,
-  "dark": $gray-800
-);
+$primary: $indigo;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $orange;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
 
 $body-bg: $gray-50;
 $input-bg: transparent;
 $input-disabled-bg: transparent;
-$input-focus-border-color: map-get($theme-colors, "primary");
-$custom-control-indicator-focus-box-shadow: none;
+$input-focus-border-color: $primary;
 $table-hover-bg: rgba(0, 0, 0, 0.03);
 
 $table-bg: transparent;
 $table-accent-bg: rgba(0, 0, 0, 0.01);
 $table-hover-bg: rgba(0, 0, 0, 0.02);
 $table-border-color: $gray-300;
+
+// Shadows
+$custom-control-indicator-focus-box-shadow: none;
+$input-btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$input-btn-focus-width: 0;
 
 // Physical
 $navbar-padding-y: 1rem;
