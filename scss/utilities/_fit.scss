@@ -1,16 +1,18 @@
 // Basics
 @mixin fit-x($value, $restore-padding: false) {
-  margin-left: -$value;
   margin-right: -$value;
+  margin-left: -$value;
+
   @if $restore-padding {
-    padding-left: $value;
     padding-right: $value;
+    padding-left: $value;
   }
 }
 
 @mixin fit-y($value, $restore-padding: false) {
   margin-top: -$value;
   margin-bottom: -$value;
+
   @if $restore-padding {
     padding-top: $value;
     padding-bottom: $value;

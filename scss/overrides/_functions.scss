@@ -25,7 +25,9 @@
 
   @if ($yiq >= 200) {
     @return darken($color, 80%);
-  } @else {
+  }
+
+  @else {
     @return $white;
   }
 }
