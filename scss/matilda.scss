@@ -5,6 +5,7 @@
 @import "bootstrap/functions";
 @import "overrides/_functions";
 @import "bootstrap/variables";
+@import "bootstrap/mixins";
 
 // Theme specific utilities
 @import "utilities/_ripple";
@@ -12,7 +13,6 @@
 @import "utilities/_fit";
 
 // BS4 overrides
-@import "bootstrap/mixins";
 @import "bootstrap/root";
 @import "bootstrap/print";
 @import "bootstrap/reboot";

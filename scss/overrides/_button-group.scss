@@ -1,5 +1,6 @@
 .btn-group {
   @include elevation(2);
+
   border-radius: $border-radius;
 
   .btn {
