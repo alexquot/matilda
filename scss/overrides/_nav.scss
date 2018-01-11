@@ -5,9 +5,8 @@
 
   .nav-link {
     @include ripple($black);
-
     border: 0;
-    color: theme-color("secondary");
+    color: $nav-tabs-link-color;
   }
 
   .nav-link.active,
@@ -15,7 +14,7 @@
     border-bottom: 2px solid theme-color("primary");
     margin-bottom: calc(#{$input-btn-border-width} - 2px);
     background-color: transparent;
-    color: theme-color("secondary");
+    color: $nav-tabs-link-active-color;
   }
 }
 
