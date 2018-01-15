@@ -27,3 +27,10 @@
     }
   }
 }
+
+.btn-group.btn-group-single {
+  box-shadow: none;
+  .btn {
+    @include elevation(2);
+  }
+}

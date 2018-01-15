@@ -1,16 +1,16 @@
 // Variables
-@import "_variables";
+@import "variables";
 
 // Basics
 @import "bootstrap/functions";
-@import "overrides/_functions";
+@import "overrides/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
 // Theme specific utilities
-@import "utilities/_ripple";
-@import "utilities/_elevation";
-@import "utilities/_fit";
+@import "utilities/ripple";
+@import "utilities/elevation";
+@import "utilities/fit";
 
 // BS4 overrides
 @import "bootstrap/root";
@@ -18,23 +18,25 @@
 @import "bootstrap/reboot";
 
 @import "bootstrap/type";
-@import "overrides/_type";
+@import "overrides/type";
 
 @import "bootstrap/images";
 @import "bootstrap/code";
 @import "bootstrap/grid";
 
 @import "bootstrap/tables";
-@import "overrides/_tables";
+@import "overrides/tables";
 
 @import "bootstrap/forms";
-@import "overrides/_forms";
+@import "overrides/forms";
 
 @import "bootstrap/buttons";
-@import "overrides/_buttons";
+@import "overrides/buttons";
 
 @import "bootstrap/transitions";
+
 @import "bootstrap/dropdown";
+@import "overrides/dropdown";
 
 @import "bootstrap/button-group";
 @import "overrides/button-group";
@@ -43,13 +45,13 @@
 @import "bootstrap/custom-forms";
 
 @import "bootstrap/nav";
-@import "overrides/_nav";
+@import "overrides/nav";
 
 @import "bootstrap/navbar";
-@import "overrides/_navbar";
+@import "overrides/navbar";
 
 @import "bootstrap/card";
-@import "overrides/_card";
+@import "overrides/card";
 
 @import "bootstrap/breadcrumb";
 @import "bootstrap/pagination";
@@ -57,10 +59,10 @@
 @import "bootstrap/jumbotron";
 
 @import "bootstrap/alert";
-@import "overrides/_alert";
+@import "overrides/alert";
 
 @import "bootstrap/progress";
-@import "overrides/_progress";
+@import "overrides/progress";
 
 @import "bootstrap/media";
 @import "bootstrap/list-group";
@@ -71,12 +73,12 @@
 @import "bootstrap/carousel";
 @import "bootstrap/utilities";
 
-@import "overrides/_links";
+@import "overrides/links";
 
 
 // Additional theme classes
-@import "extensions/_btn-fab";
-@import "extensions/_table-key-value";
+@import "extensions/btn-fab";
+@import "extensions/table-key-value";
 
 html {
   height: 100%;
