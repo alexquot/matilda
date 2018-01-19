@@ -1,20 +1,17 @@
-// Variables
+// Basics
+@import "utilities/elevation";
 @import "variables";
 
-// Basics
 @import "bootstrap/functions";
 @import "overrides/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
-// Theme specific utilities
 @import "utilities/ripple";
-@import "utilities/elevation";
 @import "utilities/fit";
 
 // BS4 overrides
 @import "bootstrap/root";
-@import "bootstrap/print";
 @import "bootstrap/reboot";
 
 @import "bootstrap/type";
@@ -72,6 +69,7 @@
 @import "bootstrap/popover";
 @import "bootstrap/carousel";
 @import "bootstrap/utilities";
+@import "bootstrap/print";
 
 @import "overrides/links";
 

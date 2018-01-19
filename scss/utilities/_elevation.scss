@@ -86,8 +86,8 @@ $ambient-elevation-map: (
   24: '0px 9px 46px 8px #{$ambient-color}'
 );
 
-@mixin elevation($zValue) {
-  box-shadow:
+@function elevation-shadow($zValue) {
+  @return
     #{map-get($umbra-elevation-map, $zValue)},
     #{map-get($penumbra-elevation-map, $zValue)},
     #{map-get($ambient-elevation-map, $zValue)};
@@ -99,4 +99,8 @@ $ambient-elevation-map: (
   @if $zValue < 0 or $zValue > 24 {
     @error '$zValue must be between 0 and 24';
   }
+}
+
+@mixin elevation($zValue) {
+  box-shadow: elevation-shadow($zValue);
 }

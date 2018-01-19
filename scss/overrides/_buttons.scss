@@ -35,11 +35,14 @@ $btn-flats:
 
 @mixin btn-active-fix($dp) {
   @each $color, $value in $theme-colors {
-    .btn-#{$color} {
+    .btn {
       &:not([disabled]):not(.disabled):active,
       &:not([disabled]):not(.disabled).active,
       .show > &.dropdown-toggle {
         @include elevation($dp);
+        &:focus {
+          @include elevation($dp);
+        }
       }
     }
   }
