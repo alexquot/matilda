@@ -1,8 +1,12 @@
-// Globals
-$font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
-$enable-shadows: false !default;
+//
+// Matilda
+//
 
-// Colors
+//
+// Color system
+//
+
+$white: #fff !default;
 $gray-50: #fafafa !default;
 $gray-100: #f5f5f5 !default;
 $gray-200: #eee !default;
@@ -13,6 +17,7 @@ $gray-600: #757575 !default;
 $gray-700: #616161 !default;
 $gray-800: #424242 !default;
 $gray-900: #212121 !default;
+$black: #000 !default;
 
 $blue: #2196f3 !default;
 $indigo: #3f51b5 !default;
@@ -34,29 +39,407 @@ $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
 
+$yiq-contrasted-threshold: 200 !default;
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+
+//
+// Options
+//
+
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+
+//
+// Spacing
+//
+
+$spacer: 1rem !default;
+
+$card-spacer-y: 0.75rem !default;
+$card-spacer-x: 1.25rem !default;
+
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * 0.25),
+    2: ($spacer * 0.5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    "cx": $card-spacer-x,
+    "cxn": -$card-spacer-x,
+    "cy": $card-spacer-y,
+    "cyn": -$card-spacer-y
+  ),
+  $spacers
+);
+
+//
+// Body
+//
+
 $body-bg: $gray-50 !default;
-$input-bg: transparent !default;
-$input-disabled-bg: transparent !default;
-$input-focus-border-color: $primary !default;
-$table-hover-bg: rgba(0, 0, 0, 0.03) !default;
+$body-color: $gray-800 !default;
+
+//
+// Links
+//
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: $link-color !default;
+$link-hover-decoration: none !default;
+
+//
+// Components
+//
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+
+$border-radius: 2px !default;
+$border-radius-lg: $border-radius !default;
+$border-radius-sm: $border-radius !default;
+
+$component-active-color: $white !default;
+$component-active-bg: $primary !default;
+
+//
+// Fonts
+//
+
+$font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
+
+//
+// Tables
+//
 
 $table-bg: transparent !default;
 $table-accent-bg: rgba(0, 0, 0, 0.01) !default;
 $table-hover-bg: rgba(0, 0, 0, 0.02) !default;
 $table-border-color: $gray-300 !default;
 
-// Shadows
+//
+// Buttons + Forms
+//
+
+$input-btn-focus-width: 0rem !default;
+$input-btn-border-width: 0rem !default;
+
+//
+// Buttons
+//
+
+$btn-box-shadow: elevation-shadow(2) !default;
+$btn-active-box-shadow: $btn-box-shadow !default;
+
+//
+// Forms
+//
+
+$input-padding-x: 0rem !default;
+$input-padding-x-sm: 0rem !default;
+$input-padding-x-lg: 0rem !default;
+
+$input-bg: transparent !default;
+$input-disabled-bg: transparent !default;
+
+$input-color: $gray-800 !default;
+$input-border-color: $input-color !default;
+$input-box-shadow: none !default;
+
+$input-border-radius: 0rem !default;
+$input-border-radius-lg: $input-border-radius !default;
+$input-border-radius-sm: $input-border-radius !default;
+
+$input-focus-bg: $input-bg !default;
+$input-focus-border-color: $input-border-color !default;
+$input-focus-color: $input-color !default;
+
+$input-placeholder-color: $gray-600 !default;
+$input-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !default;
+$input-group-addon-bg: transparent !default;
+
+$custom-control-indicator-box-shadow: none !default;
+$custom-control-indicator-checked-box-shadow: none !default;
 $custom-control-indicator-focus-box-shadow: none !default;
-$zzbtn-focus-box-shadow: none !default;
-$btn-active-box-shadow: none !default;
-$input-btn-focus-width: 0 !default;
+$custom-control-indicator-active-box-shadow: none !default;
+$custom-checkbox-indicator-indeterminate-box-shadow: none !default;
+$custom-select-focus-box-shadow: none !default;
 
-// Physical
-$navbar-padding-y: 1rem !default;
-$navbar-padding-x: 1.5rem !default;
-$card-border-width: 0 !default;
-$border-radius: 2px !default;
+$custom-file-text: (
+  en: "Browse",
+  ru: "Выбрать"
+) !default;
+
+//
+// TODO: Dropdowns
+//
+
+//$dropdown-min-width: 10rem !default;
+//$dropdown-padding-y: 0.5rem !default;
+//$dropdown-spacer: 0.125rem !default;
+//$dropdown-bg: $white !default;
+//$dropdown-border-color: rgba($black, 0.15) !default;
+//$dropdown-border-radius: $border-radius !default;
+//$dropdown-border-width: $border-width !default;
+//$dropdown-divider-bg: $gray-200 !default;
+//$dropdown-box-shadow: 0 0.5rem 1rem rgba($black, 0.175) !default;
+//
+//$dropdown-link-color: $gray-900 !default;
+//$dropdown-link-hover-color: darken($gray-900, 5%) !default;
+//$dropdown-link-hover-bg: $gray-100 !default;
+//
+//$dropdown-link-active-color: $component-active-color !default;
+//$dropdown-link-active-bg: $component-active-bg !default;
+//
+//$dropdown-link-disabled-color: $gray-600 !default;
+//
+//$dropdown-item-padding-y: 0.25rem !default;
+//$dropdown-item-padding-x: 1.5rem !default;
+//
+//$dropdown-header-color: $gray-600 !default;
+
+//
+// Navs
+//
+
+$nav-link-disabled-color: $gray-600 !default;
+
+$nav-tabs-border-width: 0rem !default;
+$nav-tabs-border-radius: 0rem !default;
+$nav-tabs-link-active-color: $body-color !default;
+$nav-tabs-link-active-bg: transparent !default;
+
+//
+// TODO: Pagination
+//
+
+//$pagination-padding-y: 0.5rem !default;
+//$pagination-padding-x: 0.75rem !default;
+//$pagination-padding-y-sm: 0.25rem !default;
+//$pagination-padding-x-sm: 0.5rem !default;
+//$pagination-padding-y-lg: 0.75rem !default;
+//$pagination-padding-x-lg: 1.5rem !default;
+//$pagination-line-height: 1.25 !default;
+//
+//$pagination-color: $link-color !default;
+//$pagination-bg: $white !default;
+//$pagination-border-width: $border-width !default;
+//$pagination-border-color: $gray-300 !default;
+
+$pagination-focus-box-shadow: none !default;
+
+//$pagination-hover-color: $link-hover-color !default;
+//$pagination-hover-bg: $gray-200 !default;
+//$pagination-hover-border-color: $gray-300 !default;
+//
+//$pagination-active-color: $component-active-color !default;
+//$pagination-active-bg: $component-active-bg !default;
+//$pagination-active-border-color: $pagination-active-bg !default;
+//
+//$pagination-disabled-color: $gray-600 !default;
+//$pagination-disabled-bg: $white !default;
+//$pagination-disabled-border-color: $gray-300 !default;
+
+//
+// Cards
+//
+
+$card-border-width: 0rem !default;
+$card-cap-bg: transparent !default;
+$card-bg: $white !default;
+$card-img-overlay-padding: 1.25rem !default;
+
+//
+// TODO: Tooltips
+//
+
+//$tooltip-max-width: 200px !default;
+//$tooltip-color: $white !default;
+//$tooltip-bg: $black !default;
+//$tooltip-border-radius: $border-radius !default;
+//$tooltip-opacity: 0.9 !default;
+//$tooltip-padding-y: 0.25rem !default;
+//$tooltip-padding-x: 0.5rem !default;
+//$tooltip-margin: 0rem !default;
+//
+//$tooltip-arrow-width: 0.8rem !default;
+//$tooltip-arrow-height: 0.4rem !default;
+//$tooltip-arrow-color: $tooltip-bg !default;
+
+//
+// TODO: Popovers
+//
+
+////$popover-font-size: $font-size-sm !default;
+//$popover-bg: $white !default;
+//$popover-max-width: 276px !default;
+//$popover-border-width: $border-width !default;
+//$popover-border-color: rgba($black, 0.2) !default;
+//$popover-border-radius: $border-radius-lg !default;
+//$popover-box-shadow: 0 0.25rem 0.5rem rgba($black, 0.2) !default;
+//
+//$popover-header-bg: darken($popover-bg, 3%) !default;
+////$popover-header-color: $headings-color !default;
+//$popover-header-padding-y: 0.5rem !default;
+//$popover-header-padding-x: 0.75rem !default;
+//
+//$popover-body-color: $body-color !default;
+//$popover-body-padding-y: $popover-header-padding-y !default;
+//$popover-body-padding-x: $popover-header-padding-x !default;
+//
+//$popover-arrow-width: 1rem !default;
+//$popover-arrow-height: 0.5rem !default;
+//$popover-arrow-color: $popover-bg !default;
+//
+//$popover-arrow-outer-color: fade-in($popover-border-color, 0.05) !default;
+
+//
+// TODO: Modals
+//
+
+//// Padding applied to the modal body
+//$modal-inner-padding: 1rem !default;
+//
+//$modal-dialog-margin: 0.5rem !default;
+//$modal-dialog-margin-y-sm-up: 1.75rem !default;
+//
+////$modal-title-line-height: $line-height-base !default;
+//
+//$modal-content-bg: $white !default;
+//$modal-content-border-color: rgba($black, 0.2) !default;
+//$modal-content-border-width: $border-width !default;
+//$modal-content-box-shadow-xs: 0 0.25rem 0.5rem rgba($black, 0.5) !default;
+//$modal-content-box-shadow-sm-up: 0 0.5rem 1rem rgba($black, 0.5) !default;
+//
+//$modal-backdrop-bg: $black !default;
+//$modal-backdrop-opacity: 0.5 !default;
+//$modal-header-border-color: $gray-200 !default;
+//$modal-footer-border-color: $modal-header-border-color !default;
+//$modal-header-border-width: $modal-content-border-width !default;
+//$modal-footer-border-width: $modal-header-border-width !default;
+//$modal-header-padding: 1rem !default;
+//
+//$modal-lg: 800px !default;
+//$modal-md: 500px !default;
+//$modal-sm: 300px !default;
+//
+//$modal-transition: transform 0.3s ease-out !default;
+
+//
+// Alerts
+//
+
+$alert-border-width: 0rem !default;
+$alert-bg-level: 0rem !default;
+// TODO: fix display of text
+$alert-color-level: -10 !default;
+
+//
+// Progress bars
+//
+
 $progress-height: 0.5rem !default;
+$progress-box-shadow: none !default;
 
-// Extensions
-$nav-tabs-link-color: $gray-600 !default;
+//
+// TODO: List group
+//
+
+//$list-group-bg: $white !default;
+//$list-group-border-color: rgba($black, 0.125) !default;
+//$list-group-border-width: $border-width !default;
+//$list-group-border-radius: $border-radius !default;
+//
+//$list-group-item-padding-y: 0.75rem !default;
+//$list-group-item-padding-x: 1.25rem !default;
+//
+//$list-group-hover-bg: $gray-100 !default;
+//$list-group-active-color: $component-active-color !default;
+//$list-group-active-bg: $component-active-bg !default;
+//$list-group-active-border-color: $list-group-active-bg !default;
+//
+//$list-group-disabled-color: $gray-600 !default;
+//$list-group-disabled-bg: $list-group-bg !default;
+//
+//$list-group-action-color: $gray-700 !default;
+//$list-group-action-hover-color: $list-group-action-color !default;
+//
+//$list-group-action-active-color: $body-color !default;
+//$list-group-action-active-bg: $gray-200 !default;
+
+//
+// TODO: Image thumbnails
+//
+
+//$thumbnail-padding: 0.25rem !default;
+//$thumbnail-bg: $body-bg !default;
+//$thumbnail-border-width: $border-width !default;
+//$thumbnail-border-color: $gray-300 !default;
+//$thumbnail-border-radius: $border-radius !default;
+//$thumbnail-box-shadow: 0 1px 2px rgba($black, 0.075) !default;
+
+// TODO: Figures
+
+//$figure-caption-font-size: 90% !default;
+//$figure-caption-color: $gray-600 !default;
+
+// TODO: Breadcrumbs
+
+//$breadcrumb-padding-y: 0.75rem !default;
+//$breadcrumb-padding-x: 1rem !default;
+//$breadcrumb-item-padding: 0.5rem !default;
+//
+//$breadcrumb-margin-bottom: 1rem !default;
+//
+//$breadcrumb-bg: $gray-200 !default;
+//$breadcrumb-divider-color: $gray-600 !default;
+//$breadcrumb-active-color: $gray-600 !default;
+//$breadcrumb-divider: "/" !default;
+
+// TODO: Carousel
+
+//$carousel-control-color: $white !default;
+//$carousel-control-width: 15% !default;
+//$carousel-control-opacity: 0.5 !default;
+//
+//$carousel-indicator-width: 30px !default;
+//$carousel-indicator-height: 3px !default;
+//$carousel-indicator-spacer: 3px !default;
+//$carousel-indicator-active-bg: $white !default;
+//
+//$carousel-caption-width: 70% !default;
+//$carousel-caption-color: $white !default;
+//
+//$carousel-control-icon-width: 20px !default;
+//
+//$carousel-control-prev-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"), "#", "%23") !default;
+//$carousel-control-next-icon-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"), "#", "%23") !default;
+//
+//$carousel-transition: transform 0.6s ease !default;
+
+// TODO: Close
+
+////$close-font-size: $font-size-base * 1.5 !default;
+////$close-font-weight: $font-weight-bold !default;
+//$close-color: $black !default;
+//$close-text-shadow: 0 1px 0 $white !default;
+
+// TODO: Code
+
+//$code-font-size: 87.5% !default;
+//$code-color: $pink !default;
+//
+//$kbd-padding-y: 0.2rem !default;
+//$kbd-padding-x: 0.4rem !default;
+//$kbd-font-size: $code-font-size !default;
+//$kbd-color: $white !default;
+//$kbd-bg: $gray-900 !default;
+//
+//$pre-color: $gray-900 !default;
+//$pre-scrollable-max-height: 340px !default;
