@@ -1,4 +1,4 @@
-@mixin ripple($color) {
+@mixin ripple($color: $black) {
   position: relative;
   overflow: hidden;
 
@@ -36,5 +36,5 @@
 }
 
 .ripple {
-  @include ripple($black);
+  @include ripple();
 }
