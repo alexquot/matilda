@@ -67,10 +67,50 @@ input.form-control {
   }
 }
 
+$input-addon-padding: 0.5rem;
+.input-group-prepend .input-group-text {
+  padding-right: $input-addon-padding;
+}
+.input-group-append .input-group-text {
+  padding-left: $input-addon-padding;
+}
+
+
 .custom-control label:hover {
   cursor: pointer;
 }
 
-.btn {
-  @include ripple();
+$btn-active-selector:
+  "&.btn:not(:disabled):not(.disabled):active,
+   &.btn:not(:disabled):not(.disabled).active";
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include ripple(color-yiq($value));
+    @include button-variant($value, $value, $value, $value, $value, $value);
+  }
+  .btn-outline-#{$color} {
+    @include ripple($value);
+    &:hover {
+      color: $value;
+      background-color: transparentize($value, 0.85);
+    }
+    #{$btn-active-selector} {
+      color: $value;
+      background-color: transparentize($value, 0.85);
+      box-shadow: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+  #{$btn-active-selector} {
+    box-shadow: none;
+  }
 }

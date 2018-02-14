@@ -1,10 +1,5 @@
-@debug $input-height;
-
 .btn.btn-fab {
-  //width: $input-height;
-  width: calc(2.25rem + 0);
-  //width: 2.25rem;
-  //width: 100px;
+  width: $input-height;
   height: $input-height;
   padding: 0;
   border-radius: 100vw;
@@ -34,7 +29,7 @@
     }
   }
 }
-//
+
 //.btn-group.btn-group-single {
 //  box-shadow: none;
 //
