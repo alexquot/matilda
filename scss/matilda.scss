@@ -24,6 +24,10 @@ body {
 // Fixes
 //
 
+//
+// Card
+//
+
 .card {
   @include elevation(2);
 
@@ -43,6 +47,14 @@ body {
   }
 }
 
+//
+// Nav
+//
+
+.navbar {
+  @include elevation(6);
+}
+
 .nav-tabs .nav-item .nav-link {
   border-bottom: $border-width solid transparent;
 
@@ -51,6 +63,10 @@ body {
     border-bottom: $border-width * 2 solid $primary;
   }
 }
+
+//
+// Forms
+//
 
 input.form-control {
   border-bottom: $border-width solid lighten($input-placeholder-color, 10%);
@@ -75,10 +91,13 @@ $input-addon-padding: 0.5rem;
   padding-left: $input-addon-padding;
 }
 
-
 .custom-control label:hover {
   cursor: pointer;
 }
+
+//
+// Buttons
+//
 
 $btn-active-selector:
   "&.btn:not(:disabled):not(.disabled):active,
@@ -114,3 +133,19 @@ $btn-active-selector:
     box-shadow: none;
   }
 }
+
+.btn-group {
+  @include elevation(2);
+  border-radius: $btn-border-radius;
+
+  .btn {
+    box-shadow: none;
+    #{$btn-active-selector} {
+      box-shadow: none;
+    }
+  }
+}
+
+//
+// Alerts
+//
