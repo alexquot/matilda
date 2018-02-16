@@ -83,7 +83,7 @@ $spacers: map-merge(
 //
 
 $body-bg: $gray-50 !default;
-$body-color: $gray-800 !default;
+$body-color: rgba(0, 0, 0, 0.87) !default;
 
 //
 // Links
@@ -116,6 +116,8 @@ $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
 $font-size-base: 1rem !default;
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
+
+$text-muted: rgba(0, 0, 0, 0.54) !default;
 
 //
 // Tables
@@ -195,6 +197,15 @@ $dropdown-box-shadow: elevation-shadow(2) !default;
 $dropdown-item-padding-y: 0.8rem !default;
 $dropdown-item-padding-x: 1rem !default;
 
+$dropdown-link-color: $gray-800 !default;
+$dropdown-link-hover-color: darken($dropdown-link-color, 5%) !default;
+$dropdown-link-hover-bg: $gray-100 !default;
+
+$dropdown-link-active-color: $component-active-color !default;
+$dropdown-link-active-bg: $component-active-bg !default;
+
+$dropdown-link-disabled-color: $gray-600 !default;
+
 //
 // Navs
 //
@@ -210,8 +221,8 @@ $nav-tabs-link-active-bg: transparent !default;
 // TODO: Pagination
 //
 
-//$pagination-padding-y: 0.5rem !default;
-//$pagination-padding-x: 0.75rem !default;
+$pagination-padding-y: 0.5rem !default;
+$pagination-padding-x: 0.75rem !default;
 //$pagination-padding-y-sm: 0.25rem !default;
 //$pagination-padding-x-sm: 0.5rem !default;
 //$pagination-padding-y-lg: 0.75rem !default;
@@ -219,22 +230,22 @@ $nav-tabs-link-active-bg: transparent !default;
 //$pagination-line-height: 1.25 !default;
 //
 //$pagination-color: $link-color !default;
-//$pagination-bg: $white !default;
-//$pagination-border-width: $border-width !default;
+$pagination-bg: transparent !default;
+$pagination-border-width: 0rem !default;
 //$pagination-border-color: $gray-300 !default;
 
 $pagination-focus-box-shadow: none !default;
 
 //$pagination-hover-color: $link-hover-color !default;
-//$pagination-hover-bg: $gray-200 !default;
+$pagination-hover-bg: transparent !default;
 //$pagination-hover-border-color: $gray-300 !default;
 //
 //$pagination-active-color: $component-active-color !default;
-//$pagination-active-bg: $component-active-bg !default;
+$pagination-active-bg: transparentize($black, 0.5) !default;
 //$pagination-active-border-color: $pagination-active-bg !default;
 //
 //$pagination-disabled-color: $gray-600 !default;
-//$pagination-disabled-bg: $white !default;
+$pagination-disabled-bg: transparent !default;
 //$pagination-disabled-border-color: $gray-300 !default;
 
 //
@@ -294,33 +305,13 @@ $card-img-overlay-padding: 1.25rem !default;
 // TODO: Modals
 //
 
-//// Padding applied to the modal body
-//$modal-inner-padding: 1rem !default;
-//
-//$modal-dialog-margin: 0.5rem !default;
-//$modal-dialog-margin-y-sm-up: 1.75rem !default;
-//
-////$modal-title-line-height: $line-height-base !default;
-//
-//$modal-content-bg: $white !default;
-//$modal-content-border-color: rgba($black, 0.2) !default;
-//$modal-content-border-width: $border-width !default;
-//$modal-content-box-shadow-xs: 0 0.25rem 0.5rem rgba($black, 0.5) !default;
-//$modal-content-box-shadow-sm-up: 0 0.5rem 1rem rgba($black, 0.5) !default;
-//
-//$modal-backdrop-bg: $black !default;
-//$modal-backdrop-opacity: 0.5 !default;
-//$modal-header-border-color: $gray-200 !default;
-//$modal-footer-border-color: $modal-header-border-color !default;
-//$modal-header-border-width: $modal-content-border-width !default;
-//$modal-footer-border-width: $modal-header-border-width !default;
-//$modal-header-padding: 1rem !default;
-//
-//$modal-lg: 800px !default;
-//$modal-md: 500px !default;
-//$modal-sm: 300px !default;
-//
-//$modal-transition: transform 0.3s ease-out !default;
+$modal-inner-padding: 1.5rem !default;
+$modal-header-padding: $modal-inner-padding !default;
+$modal-dialog-margin: 1rem !default;
+$modal-dialog-margin-y-sm-up: 5rem !default;
+$modal-content-border-width: 0rem !default;
+$modal-content-box-shadow-xs: elevation-shadow(24) !default;
+$modal-content-box-shadow-sm-up: elevation-shadow(24) !default;
 
 //
 // Alerts
@@ -328,8 +319,8 @@ $card-img-overlay-padding: 1.25rem !default;
 
 $alert-border-width: 0rem !default;
 $alert-bg-level: 0rem !default;
-// TODO: fix display of text
-$alert-color-level: -10 !default;
+//// TODO: fix display of text
+//$alert-color-level: -10 !default;
 
 //
 // Progress bars

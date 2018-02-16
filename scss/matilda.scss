@@ -5,13 +5,11 @@
 @import "ripple";
 @import "btn-fab";
 
-html {
+body,
+body.modal-open {
   height: 100%;
   overflow-y: scroll;
-}
-
-body {
-  height: 100%;
+  padding-right: 0 !important;
 }
 
 *,
@@ -44,6 +42,15 @@ body {
     border-bottom: $border-width solid $card-border-color;
     margin-right: -$card-spacer-x;
     margin-left: -$card-spacer-x;
+
+    a {
+      @include ripple();
+      color: $text-muted;
+    }
+    a:active,
+    a.active {
+      color: $body-color;
+    }
   }
 }
 
@@ -147,5 +154,19 @@ $btn-active-selector:
 }
 
 //
+// Modals
+//
+
+.modal-content div + div {
+  padding-top: 0;
+}
+
+//
 // Alerts
 //
+
+@each $color, $value in $theme-colors {
+  .alert.alert-#{$color} {
+    color: color-yiq($value);
+  }
+}
