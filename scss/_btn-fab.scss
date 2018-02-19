@@ -14,6 +14,7 @@
   &.btn-sm {
     width: $input-height-sm;
     height: $input-height-sm;
+
     i {
       font-size: $font-size-sm;
     }
@@ -22,15 +23,17 @@
   &.btn-lg {
     width: $input-height-lg;
     height: $input-height-lg;
+
     i {
       font-size: $font-size-lg;
     }
   }
 }
 
-.btn-group.btn-group-single {
-  box-shadow: none;
-  .btn {
-    @include elevation(2);
-  }
-}
+//.btn-group.btn-group-single {
+//  box-shadow: none;
+//
+//  .btn {
+//    @include elevation(2);
+//  }
+//}
