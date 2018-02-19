@@ -63,10 +63,9 @@ body.modal-open {
 }
 
 .nav-tabs .nav-item .nav-link {
-  border-bottom: $border-width solid transparent;
-
   &:active,
   &.active {
+    margin-bottom: -$border-width;
     border-bottom: $border-width * 2 solid $primary;
   }
 }
@@ -76,11 +75,11 @@ body.modal-open {
 //
 
 input.form-control {
-  border-bottom: $border-width solid lighten($input-placeholder-color, 10%);
+  border-bottom: $border-width solid $input-border-color;
 
   &:focus,
   &.focus {
-    border-bottom: $border-width * 2 solid $primary;
+    border-bottom: $border-width * 2 solid $input-focus-border-color;
     margin-bottom: -$border-width;
   }
 
