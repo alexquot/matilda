@@ -1,94 +1,180 @@
-// Basics
-@import "utilities/elevation";
+@import "elevation";
 @import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "table-key-value";
+@import "ripple";
+@import "btn-fab";
 
-@import "bootstrap/functions";
-@import "overrides/functions";
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
-
-@import "utilities/ripple";
-@import "utilities/fit";
-
-// BS4 overrides
-@import "bootstrap/root";
-@import "bootstrap/reboot";
-
-@import "bootstrap/type";
-@import "overrides/type";
-
-@import "bootstrap/images";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-
-@import "bootstrap/tables";
-@import "overrides/tables";
-
-@import "bootstrap/forms";
-@import "overrides/forms";
-
-@import "bootstrap/buttons";
-@import "overrides/buttons";
-
-@import "bootstrap/transitions";
-
-@import "bootstrap/dropdown";
-@import "overrides/dropdown";
-
-@import "bootstrap/button-group";
-@import "overrides/button-group";
-
-@import "bootstrap/input-group";
-@import "bootstrap/custom-forms";
-
-@import "bootstrap/nav";
-@import "overrides/nav";
-
-@import "bootstrap/navbar";
-@import "overrides/navbar";
-
-@import "bootstrap/card";
-@import "overrides/card";
-
-@import "bootstrap/breadcrumb";
-@import "bootstrap/pagination";
-@import "bootstrap/badge";
-@import "bootstrap/jumbotron";
-
-@import "bootstrap/alert";
-@import "overrides/alert";
-
-@import "bootstrap/progress";
-@import "overrides/progress";
-
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/close";
-@import "bootstrap/modal";
-@import "bootstrap/tooltip";
-@import "bootstrap/popover";
-@import "bootstrap/carousel";
-@import "bootstrap/utilities";
-@import "bootstrap/print";
-
-@import "overrides/links";
-
-
-// Additional theme classes
-@import "extensions/btn-fab";
-@import "extensions/table-key-value";
-
-html {
+body,
+body.modal-open {
   height: 100%;
   overflow-y: scroll;
-}
-
-body {
-  height: 100%;
+  padding-right: 0 !important;
 }
 
 *,
 *:focus,
 *:active {
   outline: none;
+}
+
+//
+// Fixes
+//
+
+//
+// Card
+//
+
+.card {
+  @include elevation(2);
+
+  .card {
+    @include elevation(0);
+
+    border: $border-width solid $card-border-color;
+    border-radius: $border-radius;
+  }
+
+  .card-header .card-header-tabs {
+    padding-right: $card-spacer-x;
+    padding-left: $card-spacer-x;
+    border-bottom: $border-width solid $card-border-color;
+    margin-right: -$card-spacer-x;
+    margin-left: -$card-spacer-x;
+
+    a {
+      @include ripple();
+      color: $text-muted;
+    }
+    a:active,
+    a.active {
+      color: $body-color;
+    }
+  }
+}
+
+//
+// Nav
+//
+
+.navbar {
+  @include elevation(6);
+}
+
+.nav-tabs .nav-item .nav-link {
+  border-bottom: $border-width solid transparent;
+
+  &:active,
+  &.active {
+    border-bottom: $border-width * 2 solid $primary;
+  }
+}
+
+//
+// Forms
+//
+
+input.form-control {
+  border-bottom: $border-width solid lighten($input-placeholder-color, 10%);
+
+  &:focus,
+  &.focus {
+    border-bottom: $border-width * 2 solid $primary;
+    margin-bottom: -$border-width;
+  }
+
+  &:disabled,
+  &.disabled {
+    border-bottom-style: dashed;
+  }
+}
+
+$input-addon-padding: 0.5rem;
+.input-group-prepend .input-group-text {
+  padding-right: $input-addon-padding;
+}
+.input-group-append .input-group-text {
+  padding-left: $input-addon-padding;
+}
+
+.custom-control label:hover {
+  cursor: pointer;
+}
+
+//
+// Buttons
+//
+
+$btn-active-selector:
+  "&.btn:not(:disabled):not(.disabled):active,
+   &.btn:not(:disabled):not(.disabled).active";
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include ripple(color-yiq($value));
+    @include button-variant($value, $value, $value, $value, $value, $value);
+  }
+  .btn-outline-#{$color} {
+    @include ripple($value);
+    &:hover {
+      color: $value;
+      background-color: transparentize($value, 0.85);
+    }
+    #{$btn-active-selector} {
+      color: $value;
+      background-color: transparentize($value, 0.85);
+      box-shadow: none;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+  #{$btn-active-selector} {
+    box-shadow: none;
+  }
+}
+
+.btn-group {
+  @include elevation(2);
+  border-radius: $btn-border-radius;
+
+  .btn {
+    box-shadow: none;
+    #{$btn-active-selector} {
+      box-shadow: none;
+    }
+  }
+}
+
+//
+// Modals
+//
+
+.modal-content div + div {
+  padding-top: 0;
+}
+
+//
+// Alerts
+//
+
+@each $color, $value in $theme-colors {
+  .alert.alert-#{$color} {
+    color: color-yiq($value);
+  }
+}
+
+//
+// Pagination
+//
+
+.pagination .page-link {
+  border-radius: $border-radius;
 }
