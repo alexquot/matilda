@@ -170,3 +170,11 @@ $btn-active-selector:
     color: color-yiq($value);
   }
 }
+
+//
+// Pagination
+//
+
+.pagination .page-link {
+  border-radius: $border-radius;
+}
