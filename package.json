@@ -10,8 +10,10 @@
   },
   "author": "Alex Quot",
   "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
   "devDependencies": {
-    "bootstrap": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.1.0",
     "node-sass-tilde-importer": "^1.0.1",
