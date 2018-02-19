@@ -159,8 +159,8 @@ $input-padding-x-lg: 0rem !default;
 $input-bg: transparent !default;
 $input-disabled-bg: transparent !default;
 
-$input-color: $gray-800 !default;
-$input-border-color: $input-color !default;
+$input-color: $body-color !default;
+$input-border-color: rgba(0, 0, 0, 0.3);
 $input-box-shadow: none !default;
 
 $input-border-radius: 0rem !default;
@@ -168,7 +168,7 @@ $input-border-radius-lg: $input-border-radius !default;
 $input-border-radius-sm: $input-border-radius !default;
 
 $input-focus-bg: $input-bg !default;
-$input-focus-border-color: $input-border-color !default;
+$input-focus-border-color: $primary !default;
 $input-focus-color: $input-color !default;
 
 $input-placeholder-color: $gray-600 !default;
@@ -188,7 +188,7 @@ $custom-file-text: (
 ) !default;
 
 //
-// TODO: Dropdowns
+// Dropdowns
 //
 
 $dropdown-padding-y: 0rem !default;
@@ -265,7 +265,7 @@ $card-img-overlay-padding: 1.25rem !default;
 //$tooltip-arrow-color: $tooltip-bg !default;
 
 //
-// TODO: Popovers
+// Popovers
 //
 
 $popover-bg: transparentize($black, 0.3) !default;
@@ -278,7 +278,7 @@ $popover-arrow-color: transparent !default;
 $popover-arrow-outer-color: transparent !default;
 
 //
-// TODO: Modals
+// Modals
 //
 
 $modal-inner-padding: 1.5rem !default;
