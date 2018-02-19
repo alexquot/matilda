@@ -1,7 +1,7 @@
 {
   "name": "matilda",
-  "version": "1.0.0",
-  "description": "A kinda Material theme for Bootstrap 4.",
+  "version": "1.1.0",
+  "description": "A kinda Material theme for Bootstrap 4",
   "main": "index.js",
   "scripts": {
     "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
@@ -9,7 +9,7 @@
     "watch": "gulp watch"
   },
   "author": "Alex Quot",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "bootstrap": "^4.0.0",
     "gulp": "^3.9.1",
