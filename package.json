@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
-    "build": "gulp build",
+    "scss": "gulp scss",
+    "views": "gulp views",
+    "build": "gulp scss && gulp views",
     "watch": "gulp watch"
   },
   "author": "Alex Quot",
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "node-sass-tilde-importer": "^1.0.1",
     "stylelint": "^8.4.0",

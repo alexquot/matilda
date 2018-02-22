@@ -300,7 +300,8 @@ $alert-bg-level: 0rem !default;
 // Progress bars
 //
 
-$progress-height: 0.5rem !default;
+$progress-height: 5px !default;
+$progress-border-radius: 0 !default;
 $progress-box-shadow: none !default;
 
 //

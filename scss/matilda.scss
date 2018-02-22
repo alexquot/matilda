@@ -93,6 +93,7 @@ $input-addon-padding: 0.5rem;
 .input-group-prepend .input-group-text {
   padding-right: $input-addon-padding;
 }
+
 .input-group-append .input-group-text {
   padding-left: $input-addon-padding;
 }
@@ -105,8 +106,7 @@ $input-addon-padding: 0.5rem;
 // Buttons
 //
 
-$btn-active-selector:
-  "&.btn:not(:disabled):not(.disabled):active,
+$btn-active-selector: "&.btn:not(:disabled):not(.disabled):active,
    &.btn:not(:disabled):not(.disabled).active";
 
 @each $color, $value in $theme-colors {
@@ -176,4 +176,76 @@ $btn-active-selector:
 
 .pagination .page-link {
   border-radius: $border-radius;
+}
+
+//
+// Quotes
+//
+
+.blockquote {
+  border-left: 0.4rem solid transparentize($body-color, 0.75);
+  padding-left: 0.7rem;
+}
+
+//
+// Progress
+//
+
+.progress {
+  position: relative;
+  overflow: hidden;
+  .progress-bar-animated {
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      will-change: left, right;
+      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      animation-delay: 1.15s;
+    }
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
 }
