@@ -58,15 +58,13 @@ body.modal-open {
   a {
     @include ripple();
     color: $text-muted;
-  }
 
-  a:active,
-  a.active {
-    color: $nav-tabs-link-active-color;
+    &.active {
+      color: $nav-tabs-link-active-color;
+    }
   }
 
   .nav-item .nav-link {
-    &:active,
     &.active {
       margin-bottom: -$border-width;
       border-bottom: $border-width * 2 solid $primary;
