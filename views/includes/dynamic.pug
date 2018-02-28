@@ -1,0 +1,19 @@
+h1.mt-5 Dynamic
+button.mr-1.mb-1.btn.btn-primary(
+  data-toggle="popover"
+  title="Popover title"
+  data-content="And here's some amazing content. It's very engaging. Right?"
+) Popover
+button.mr-1.mb-1.btn.btn-primary(
+  data-toggle="modal"
+  data-target="#exampleModal"
+) Modal
+#exampleModal.modal.fade
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        h5#exampleModalLabel.modal-title Modal title
+      .modal-body Modal body
+      .modal-footer
+        button.btn.btn-outline-dark(data-dismiss="modal") Close
+        button.btn.btn-outline-dark.active Save changes
