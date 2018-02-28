@@ -39,18 +39,8 @@ body.modal-open {
   .card-header .card-header-tabs {
     padding-right: $card-spacer-x;
     padding-left: $card-spacer-x;
-    border-bottom: $border-width solid $card-border-color;
     margin-right: -$card-spacer-x;
     margin-left: -$card-spacer-x;
-
-    a {
-      @include ripple();
-      color: $text-muted;
-    }
-    a:active,
-    a.active {
-      color: $nav-tabs-link-active-color;
-    }
   }
 }
 
@@ -62,11 +52,25 @@ body.modal-open {
   @include elevation(6);
 }
 
-.nav-tabs .nav-item .nav-link {
-  &:active,
-  &.active {
-    margin-bottom: -$border-width;
-    border-bottom: $border-width * 2 solid $primary;
+.nav-tabs {
+  border-bottom: $border-width solid $card-border-color;
+
+  a {
+    @include ripple();
+    color: $text-muted;
+  }
+
+  a:active,
+  a.active {
+    color: $nav-tabs-link-active-color;
+  }
+
+  .nav-item .nav-link {
+    &:active,
+    &.active {
+      margin-bottom: -$border-width;
+      border-bottom: $border-width * 2 solid $primary;
+    }
   }
 }
 
