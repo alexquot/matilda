@@ -76,20 +76,30 @@ body.modal-open {
 // Forms
 //
 
-input.form-control,
-.custom-select {
+@mixin border-bottom-accent($padding-bottom) {
   border-bottom: $border-width solid $input-border-color;
+  &:disabled { border-bottom-style: dashed; }
 
   &:focus,
   &.focus {
     border-bottom: $border-width * 2 solid $input-focus-border-color;
-    padding-bottom: calc(#{$input-padding-y} - #{$border-width});
+    padding-bottom: calc(#{$padding-bottom} - #{$border-width});
   }
+}
 
-  &:disabled,
-  &.disabled {
-    border-bottom-style: dashed;
-  }
+.form-control,
+.custom-select {
+  @include border-bottom-accent($input-padding-y);
+}
+
+.input-group-sm .form-control,
+.custom-select-sm {
+  @include border-bottom-accent($input-padding-y-sm);
+}
+
+.input-group-lg .form-control,
+.custom-select-lg {
+  @include border-bottom-accent($input-padding-y-lg);
 }
 
 $input-addon-padding: 0.5rem;
