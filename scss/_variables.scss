@@ -207,8 +207,8 @@ $dropdown-link-color: $gray-800 !default;
 $dropdown-link-hover-color: darken($dropdown-link-color, 5%) !default;
 $dropdown-link-hover-bg: $gray-100 !default;
 
-$dropdown-link-active-color: $component-active-color !default;
-$dropdown-link-active-bg: $component-active-bg !default;
+$dropdown-link-active-color: $dropdown-link-hover-color !default;
+$dropdown-link-active-bg: $dropdown-link-hover-bg !default;
 
 $dropdown-link-disabled-color: $gray-600 !default;
 
