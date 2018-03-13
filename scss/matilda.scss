@@ -50,6 +50,9 @@ body.modal-open {
 
 .dropdown-menu {
   overflow: hidden;
+  a {
+    @include ripple();
+  }
 }
 
 //
