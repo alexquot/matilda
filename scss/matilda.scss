@@ -76,7 +76,8 @@ body.modal-open {
 // Forms
 //
 
-input.form-control {
+input.form-control,
+.custom-select {
   border-bottom: $border-width solid $input-border-color;
 
   &:focus,
@@ -102,7 +103,11 @@ $input-addon-padding: 0.5rem;
 
 select.custom-select {
   height: calc(#{$custom-select-height} + #{$border-width});
-  border-bottom: $border-width solid $input-border-color;
+  @include transition($input-transition);
+
+  -moz-appearance: none; // Firefox
+  -webkit-appearance: none; // Safari and Chrome
+  appearance: none;
 }
 
 //
