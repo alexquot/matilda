@@ -3,12 +3,15 @@ h1.mt-5 Forms
   .form-group.col-md-6
     input.form-control(placeholder="This is an input")
   .form-group.col-md-6
-    input.form-control(placeholder="Another one")
+    select.custom-select
+      option Custom select
+      option Another option
+      option And another one
 .form-row
   .form-group.col-md-6
     input.form-control(placeholder="This input is disabled" disabled)
   .form-group.col-md-6
-    .input-group.mb-3
+    .input-group
       .input-group-prepend
         span.input-group-text $
         span.input-group-text 0.00
@@ -32,4 +35,3 @@ h1.mt-5 Forms
     .custom-control.custom-radio
       input#customRadio2.custom-control-input(name="customRadio" type="radio")
       label.custom-control-label(for="customRadio2") Custom radio 2
-

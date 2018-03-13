@@ -82,7 +82,7 @@ input.form-control {
   &:focus,
   &.focus {
     border-bottom: $border-width * 2 solid $input-focus-border-color;
-    margin-bottom: -$border-width;
+    padding-bottom: calc(#{$input-padding-y} - #{$border-width});
   }
 
   &:disabled,
@@ -92,16 +92,17 @@ input.form-control {
 }
 
 $input-addon-padding: 0.5rem;
-.input-group-prepend .input-group-text {
-  padding-right: $input-addon-padding;
-}
+.input-group-prepend .input-group-text { padding-right: $input-addon-padding; }
+.input-group-append .input-group-text { padding-left: $input-addon-padding; }
 
-.input-group-append .input-group-text {
-  padding-left: $input-addon-padding;
-}
-
-.custom-control label:hover {
+.custom-control label:hover,
+.custom-select {
   cursor: pointer;
+}
+
+select.custom-select {
+  height: calc(#{$custom-select-height} + #{$border-width});
+  border-bottom: $border-width solid $input-border-color;
 }
 
 //
