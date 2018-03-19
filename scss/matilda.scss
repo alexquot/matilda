@@ -83,6 +83,11 @@ body.modal-open {
   }
 }
 
+.nav .nav-item .nav-link {
+  font-size: $font-size-sm;
+  font-weight: $btn-font-weight;
+}
+
 //
 // Forms
 //
@@ -135,6 +140,12 @@ select.custom-select {
 //
 // Buttons
 //
+
+.btn:not(.btn-link) {
+  font-size: $font-size-sm;
+  &.btn-sm { font-size: $font-size-sm * 0.875; }
+  &.btn-lg { font-size: $font-size-base; }
+}
 
 $btn-active-selector: "&.btn:not(:disabled):not(.disabled):active,
    &.btn:not(:disabled):not(.disabled).active";
