@@ -1,0 +1,278 @@
+//
+// Card
+//
+
+.card {
+  @include elevation(2);
+
+  .card {
+    @include elevation(0);
+
+    border: $border-width solid $card-border-color;
+    border-radius: $border-radius;
+  }
+
+  .card-header .card-header-tabs {
+    padding-right: $card-spacer-x;
+    padding-left: $card-spacer-x;
+    margin-right: -$card-spacer-x;
+    margin-left: -$card-spacer-x;
+  }
+}
+
+//
+// Dropdowns
+//
+
+.dropdown-menu {
+  overflow: hidden;
+
+  a {
+    @include ripple();
+  }
+}
+
+//
+// Nav
+//
+
+.navbar {
+  @include elevation(6);
+}
+
+.nav-tabs {
+  border-bottom: $border-width solid $card-border-color;
+
+  a {
+    @include ripple();
+
+    color: $text-muted;
+
+    &.active {
+      color: $nav-tabs-link-active-color;
+    }
+  }
+
+  .nav-item .nav-link {
+    &.active {
+      border-bottom: $border-width * 2 solid $primary;
+      margin-bottom: -$border-width;
+    }
+  }
+}
+
+.nav .nav-item .nav-link {
+  font-size: $font-size-sm;
+  font-weight: $btn-font-weight;
+}
+
+//
+// Forms
+//
+
+@mixin border-bottom-accent($padding-bottom) {
+  border-bottom: $border-width solid $input-border-color;
+  &:disabled { border-bottom-style: dashed; }
+
+  &:focus,
+  &.focus {
+    padding-bottom: calc(#{$padding-bottom} - #{$border-width});
+    border-bottom: $border-width * 2 solid $input-focus-border-color;
+  }
+}
+
+.form-control,
+.custom-select {
+  @include border-bottom-accent($input-padding-y);
+}
+
+.input-group-sm .form-control,
+.custom-select-sm {
+  @include border-bottom-accent($input-padding-y-sm);
+}
+
+.input-group-lg .form-control,
+.custom-select-lg {
+  @include border-bottom-accent($input-padding-y-lg);
+}
+
+$input-addon-padding: 0.5rem;
+.input-group-prepend .input-group-text { padding-right: $input-addon-padding; }
+.input-group-append .input-group-text { padding-left: $input-addon-padding; }
+
+.custom-control label:hover,
+.custom-select {
+  cursor: pointer;
+}
+
+select.custom-select {
+  // idk why is this needed for .custom-select and .form-control alignment
+  height: calc(#{$custom-select-height} + #{$border-width});
+  -moz-appearance: none; // Firefox
+  -webkit-appearance: none; // Safari and Chrome
+  appearance: none;
+
+  @include transition($input-transition);
+}
+
+//
+// Buttons
+//
+
+.btn:not(.btn-link) {
+  font-size: $font-size-sm;
+  &.btn-sm { font-size: $font-size-sm * 0.875; }
+  &.btn-lg { font-size: $font-size-base; }
+}
+
+@mixin apply-to-active-btn() {
+  &.btn:not(:disabled):not(.disabled):active,
+  &.btn:not(:disabled):not(.disabled).active {
+    @content;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include ripple(color-yiq($value));
+    @include button-variant($value, $value, $value, $value, $value, $value);
+  }
+
+  .btn-outline-#{$color} {
+    @include ripple($value);
+
+    &:hover {
+      background-color: transparentize($value, 0.85);
+      color: $value;
+    }
+
+    @include apply-to-active-btn {
+      background-color: transparentize($value, 0.85);
+      box-shadow: none;
+      color: $value;
+      &:focus { box-shadow: none; }
+    }
+  }
+}
+
+.btn-link,
+.btn-link:hover,
+.btn-link:active,
+.btn-link:focus {
+  @include apply-to-active-btn { box-shadow: none; }
+}
+
+.btn-group {
+  @include elevation(2);
+
+  border-radius: $btn-border-radius;
+
+  .btn {
+    box-shadow: none;
+
+    @include apply-to-active-btn { box-shadow: none; }
+  }
+}
+
+//
+// Modals
+//
+
+.modal-content div + div {
+  padding-top: 0;
+}
+
+//
+// Alerts
+//
+
+@each $color, $value in $theme-colors {
+  .alert.alert-#{$color} {
+    color: color-yiq($value);
+  }
+}
+
+//
+// Pagination
+//
+
+.pagination .page-link {
+  border-radius: $border-radius;
+}
+
+//
+// Quotes
+//
+
+.blockquote {
+  padding-left: 0.7rem;
+  border-left: 0.4rem solid transparentize($body-color, 0.75);
+}
+
+//
+// Progress
+//
+
+.progress {
+  position: relative;
+  overflow: hidden;
+
+  .progress-bar-animated {
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      background-color: inherit;
+      content: '';
+      will-change: left, right;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      animation-delay: 1.15s;
+      background-color: inherit;
+      content: '';
+      will-change: left, right;
+    }
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    right: 100%;
+    left: -35%;
+  }
+
+  60% {
+    right: -90%;
+    left: 100%;
+  }
+
+  100% {
+    right: -90%;
+    left: 100%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    right: 100%;
+    left: -200%;
+  }
+
+  60% {
+    right: -8%;
+    left: 107%;
+  }
+
+  100% {
+    right: -8%;
+    left: 107%;
+  }
+}

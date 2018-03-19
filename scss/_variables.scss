@@ -30,7 +30,7 @@ $green: #4caf50 !default;
 $teal: #009688 !default;
 $cyan: #00bcd4 !default;
 
-$primary: $indigo !default;
+$primary: #009eaf !default;
 $secondary: $gray-600 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -409,14 +409,5 @@ $progress-box-shadow: none !default;
 
 // TODO: Code
 
-//$code-font-size: 87.5% !default;
-//$code-color: $pink !default;
-//
-//$kbd-padding-y: 0.2rem !default;
-//$kbd-padding-x: 0.4rem !default;
-//$kbd-font-size: $code-font-size !default;
-//$kbd-color: $white !default;
-//$kbd-bg: $gray-900 !default;
-//
-//$pre-color: $gray-900 !default;
-//$pre-scrollable-max-height: 340px !default;
+$code-color: $pink !default;
+$pre-color: $code-color !default;
