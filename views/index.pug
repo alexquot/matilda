@@ -1,25 +1,20 @@
 extends layouts/base.pug
 
 block content
-  h1.mt-5 Hi there!
-  h4.mt-4 About
-  p.
-    Matilda is a kinda #[a(href="https://material.io/") Material] theme for
-    #[a(href="https://getbootstrap.com/docs/4.0/getting-started/introduction/")]
-    Bootstrap 4. The goals of this project are to provide a theme that looks similar
-    to Material Guidelines, but not to overdose it with complexity. There's a need
-    for a simple but beautiful Bootstrap themes and I want to keep everything in a
-    single CSS file. So, no JS plugins at all.
-  p.
-    Currently it's in early stage development, but one can find it's quite usable already.
-  h4.mt-4 Helping the project
-  p.
-    It would be nice to see any activity in project's GitHub page.
-    Feel free to fill issues and create pull requests.
-  include includes/buttons.pug
-  include includes/cards.pug
-  include includes/forms.pug
-  include includes/indicators.pug
-  include includes/typography.pug
-  include includes/tables.pug
-  include includes/dynamic.pug
+  .jumbotron.bg-primary.text-white.text-center
+    h1 Matilda
+    p Material Design theme for Bootstrap 4
+    button.mt-5.btn.btn-light.text-primary#discover Discover
+  .container.py-5
+    h1 About
+    p.
+      Matilda is a #[a(href="https://material.io/") Material Design] theme for
+      #[a(href="https://getbootstrap.com/docs/4.0/getting-started/introduction/") Bootstrap 4].
+      The goals of this project are to provide a theme that looks similar
+      to Material Guidelines, but not to overdose it with complexity. There's also won't be any additional
+      JS plugins, so you can use Matilda flawlessly with any other framework like Angular or React.
+      Currently it's in early stage development, but one can find it's quite usable already.
+    h1.mt-5 Helping the project
+    p.
+      It would be nice to see any activity in project's GitHub page.
+      Feel free to fill issues and create pull requests.
