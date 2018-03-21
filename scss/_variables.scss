@@ -113,9 +113,15 @@ $component-active-bg: $primary !default;
 //
 
 $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
+$font-family-monospace: 'Roboto Mono', monospace !default;
 $font-size-base: 1rem !default;
+
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 500 !default;
 
 $text-muted: rgba(0, 0, 0, 0.54) !default;
 
@@ -155,7 +161,7 @@ $btn-box-shadow: elevation-shadow(2) !default;
 $btn-active-box-shadow: $btn-box-shadow !default;
 $btn-focus-box-shadow: $btn-box-shadow !default;
 
-$btn-font-weight: 500;
+$btn-font-weight: 500 !default;
 $btn-transition:
   color none,
   background-color none,
@@ -407,7 +413,21 @@ $progress-box-shadow: none !default;
 //$close-color: $black !default;
 //$close-text-shadow: 0 1px 0 $white !default;
 
-// TODO: Code
+//
+// Code
+//
 
-$code-color: $pink !default;
-$pre-color: $code-color !default;
+$code-color: $light !default;
+$pre-color: $light !default;
+$kbd-color: $light !default;
+$kbd-bg: $dark !default;
+
+//
+// Matilda
+// Theme specific variables
+//
+
+$code-bg: $dark !default;
+$code-border-radius: $border-radius !default;
+$code-padding: 0 0.2rem !default;
+$pre-code-padding: 1rem !default;

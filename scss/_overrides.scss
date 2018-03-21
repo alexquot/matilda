@@ -276,3 +276,21 @@ select.custom-select {
     left: 107%;
   }
 }
+
+//
+// Code
+//
+
+code {
+  padding: $code-padding;
+  background-color: $code-bg;
+  border-radius: $code-border-radius;
+}
+
+pre code {
+  @extend .text-nowrap;
+
+  display: block;
+  padding: $pre-code-padding;
+  overflow-x: auto;
+}

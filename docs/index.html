@@ -1,20 +1,28 @@
-<!DOCTYPE html><html><head><title>Matilda</title><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;subset=cyrillic" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./matilda.css"><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><style>.jumbotron h1 {
-  font-weight: 300;
-  font-size: 56px;
+<!DOCTYPE html><html><head><title>Matilda</title><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;amp;subset=cyrillic" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./matilda.css"><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script><style>.md-menu {
+  margin-top: 3.6rem;
+  min-width: 200px;
+  top: 100px;
 }
-.jumbotron h2 {
-  font-weight: 300;
-  font-size: 40px;
+.md-menu a {
+  font-size: 0.9rem;
+  padding: 0;
+  margin-top: 5px;
 }
-.jumbotron p {
-  font-weight: 300;
-  font-size: 18px;
-}</style></head><body><nav class="navbar navbar-expand navbar-dark bg-primary sticky-top"><a class="btn btn-outline-dark text-white" href="./index.html">Matilda</a><a class="btn btn-outline-dark text-white" href="./docs.html">Docs</a><a class="btn btn-outline-dark text-white ml-auto" href="https://github.com/alexquot/matilda">GitHub</a></nav><div class="jumbotron bg-primary text-white text-center"><h1>Matilda</h1><p>Material Design theme for Bootstrap 4</p><button class="mt-5 btn btn-light text-primary" id="discover">Discover</button></div><div class="container py-5"><h1>About</h1><p>Matilda is a <a href="https://material.io/">Material Design</a> theme for
+.jumbotron h1 { font-size: 56px; }
+.jumbotron h2 { font-size: 40px; }
+.jumbotron p { font-size: 18px; }
+:target::before {
+  content: "";
+  display: block;
+  height: 100px;
+  margin: -100px 0 0;
+}</style></head><body><nav class="navbar navbar-expand navbar-dark bg-primary sticky-top"><a class="btn btn-outline-dark text-white" href="./index.html">Matilda</a><a class="btn btn-outline-dark text-white" href="./docs.html">Docs</a><a class="btn btn-outline-dark text-white ml-auto" href="https://github.com/alexquot/matilda">GitHub</a></nav><div class="jumbotron jumbotron-fluid bg-primary text-white text-center"><h1 class="font-weight-light">Matilda</h1><p class="font-weight-light">Material Design theme for Bootstrap 4</p><button class="mt-5 btn btn-light text-primary" id="discover">Discover</button></div><div class="container py-5"><h1>About</h1><p>Matilda is a <a href="https://material.io/">Material Design</a> theme for
 <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4</a>.
 The goals of this project are to provide a theme that looks similar
-to Material Guidelines, but not to overdose it with complexity. There's also won't be any additional
-JS plugins, so you can use Matilda flawlessly with any other framework like Angular or React.
-Currently it's in early stage development, but one can find it's quite usable already.</p><h1 class="mt-5">Helping the project</h1><p>It would be nice to see any activity in project's GitHub page.
+to Material Guidelines, but not to overdose it with complexity. There's also won't be any
+additional JS plugins, so you can use Matilda flawlessly with any framework like
+Angular or React. Currently it's in early stage development, but one can find it's
+quite usable already.</p><h1 class="mt-5">Helping the project</h1><p>It would be nice to see any activity in project's GitHub page.
 Feel free to fill issues and create pull requests.</p></div><script>$(function () {
   $('[data-toggle="popover"]').popover()
 })
