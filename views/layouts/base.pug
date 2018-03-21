@@ -4,22 +4,30 @@ html
     title Matilda
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet")
     link(rel="stylesheet" type="text/css" href="./matilda.css")
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
     style.
-      .jumbotron h1 {
-        font-weight: 300;
-        font-size: 56px;
+      .md-menu {
+        margin-top: 3.6rem;
+        min-width: 200px;
+        top: 100px;
       }
-      .jumbotron h2 {
-        font-weight: 300;
-        font-size: 40px;
+      .md-menu a {
+        font-size: 0.9rem;
+        padding: 0;
+        margin-top: 5px;
       }
-      .jumbotron p {
-        font-weight: 300;
-        font-size: 18px;
+      .jumbotron h1 { font-size: 56px; }
+      .jumbotron h2 { font-size: 40px; }
+      .jumbotron p { font-size: 18px; }
+      :target::before {
+        content: "";
+        display: block;
+        height: 100px;
+        margin: -100px 0 0;
       }
   body
     nav.navbar.navbar-expand.navbar-dark.bg-primary.sticky-top
