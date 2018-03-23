@@ -288,8 +288,6 @@ code {
 }
 
 pre code {
-  @extend .text-nowrap;
-
   display: block;
   padding: $pre-code-padding;
   overflow-x: auto;

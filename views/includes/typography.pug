@@ -1,9 +1,18 @@
+- var roboto = '<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">';
+- var robotoMono = '<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet">';
+
 h1.mt-5(id="typography") Typography
 
 h4.mt-4 Basics
 p.
   #[a(href="https://material.io/guidelines/style/typography.html") Roboto]
-  fonts are recommended, you should include them by yourself.
+  fonts are recommended, you should include them by yourself. Please, don't forget
+  to include different font weights in your imports. It's recommended
+  to make them look something like this.
+pre
+  code.
+    #{roboto}
+    #{robotoMono}
 
 h4.mt-4 Headings
 .text-right
