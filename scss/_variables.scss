@@ -274,33 +274,24 @@ $card-bg: $white !default;
 $card-img-overlay-padding: 1.25rem !default;
 
 //
-// TODO: Tooltips
+// Tooltips
 //
 
-//$tooltip-max-width: 200px !default;
-//$tooltip-color: $white !default;
-//$tooltip-bg: $black !default;
-//$tooltip-border-radius: $border-radius !default;
-//$tooltip-opacity: 0.9 !default;
-//$tooltip-padding-y: 0.25rem !default;
-//$tooltip-padding-x: 0.5rem !default;
-//$tooltip-margin: 0rem !default;
-//
-//$tooltip-arrow-width: 0.8rem !default;
-//$tooltip-arrow-height: 0.4rem !default;
-//$tooltip-arrow-color: $tooltip-bg !default;
+$tooltip-color: $white !default;
+$tooltip-bg: transparentize($black, 0.2) !default;
+$tooltip-opacity: 1 !default;
 
 //
 // Popovers
 //
 
-$popover-bg: transparentize($black, 0.3) !default;
+$popover-bg: transparentize($black, 0.2) !default;
 $popover-border-width: 0rem !default;
 $popover-box-shadow: none !default;
-$popover-header-bg: transparentize($black, 0.7) !default;
+$popover-header-bg: transparentize($black, 0.6) !default;
 $popover-header-color: $white !default;
 $popover-body-color: $white !default;
-$popover-arrow-color: transparent !default;
+$popover-arrow-color: $popover-bg !default;
 $popover-arrow-outer-color: transparent !default;
 
 //
