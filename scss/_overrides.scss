@@ -1,4 +1,13 @@
 //
+// Links
+//
+
+a[href],
+.btn-link {
+  font-weight: $font-weight-bold;
+}
+
+//
 // Card
 //
 
@@ -121,11 +130,15 @@ select.custom-select {
 
 .btn:not(.btn-link) {
   font-size: $font-size-sm;
+  text-transform: $btn-text-transform;
   &.btn-sm { font-size: $font-size-sm * 0.875; }
   &.btn-lg { font-size: $font-size-base; }
 }
 
-@mixin apply-to-active-btn() {
+@mixin btn-any-state() {
+  &,
+  &:hover,
+  &:focus,
   &.btn:not(:disabled):not(.disabled):active,
   &.btn:not(:disabled):not(.disabled).active {
     @content;
@@ -134,43 +147,38 @@ select.custom-select {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @include ripple(color-yiq($value));
-    @include button-variant($value, $value, $value, $value, $value, $value);
+    @include button-outline-variant($value, $value, transparentize($value, 0.9));
+
+    @include btn-any-state {
+      color: $value;
+    }
+
+    @if $enable-ripple {
+      @include ripple($value);
+    }
   }
 
   .btn-outline-#{$color} {
-    @include ripple($value);
+    @extend .btn-#{$color};
 
-    &:hover {
-      background-color: transparentize($value, 0.85);
-      color: $value;
+    @include btn-any-state {
+      border-color: $border-color;
+      border-width: $border-width;
     }
 
-    @include apply-to-active-btn {
-      background-color: transparentize($value, 0.85);
-      box-shadow: none;
-      color: $value;
-      &:focus { box-shadow: none; }
-    }
+    padding: calc(#{$btn-padding-y} - #{$border-width}) $btn-padding-x;
   }
-}
 
-.btn-link,
-.btn-link:hover,
-.btn-link:active,
-.btn-link:focus {
-  @include apply-to-active-btn { box-shadow: none; }
-}
+  .btn-contained-#{$color} {
+    @include button-variant(
+      $value, $value,
+      $value, $value,
+      $value, $value
+    );
 
-.btn-group {
-  @include elevation(2);
-
-  border-radius: $btn-border-radius;
-
-  .btn {
-    box-shadow: none;
-
-    @include apply-to-active-btn { box-shadow: none; }
+    @if $enable-ripple {
+      @include ripple(color-yiq($value));
+    }
   }
 }
 
@@ -290,5 +298,6 @@ code {
 pre code {
   display: block;
   padding: $pre-code-padding;
+  background-color: $pre-bg;
   overflow-x: auto;
 }

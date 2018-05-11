@@ -13,11 +13,12 @@
     margin-left: 0;
     background-position: 50%;
     background-size: 1000% 1000%;
-    content: "";
+    content: '';
     opacity: 0;
     pointer-events: none;
     transition:
       background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      //background 0.2s linear,
       opacity 0.25s 0.4s;
 
     @include gradient-radial($color 10%, transparent 10.01%);
