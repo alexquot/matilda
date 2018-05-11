@@ -1,45 +1,21 @@
 h1.mt-5(id="buttons") Buttons
 
-h4.mt-4 Common buttons
 p.
-  Basic buttons have the ripple effect. You can also use
+  Buttons have the ripple effect. You can also use
   #[code .ripple] class and #[code ripple($color: $black)] mixin in your SASS code.
-button.mr-1.mb-1.btn.btn-primary Primary
-button.mr-1.mb-1.btn.btn-secondary Secondary
-button.mr-1.mb-1.btn.btn-success Success
-button.mr-1.mb-1.btn.btn-danger Danger
-button.mr-1.mb-1.btn.btn-warning Warning
-button.mr-1.mb-1.btn.btn-info Info
-button.mr-1.mb-1.btn.btn-light Light
-button.mr-1.mb-1.btn.btn-dark Dark
+button.mr-1.mb-1.btn.btn-primary Text
+button.mr-1.mb-1.btn.btn-outline-primary Outline
+button.mr-1.mb-1.btn.btn-contained-primary Contained
+button.mr-1.mb-1.btn.btn-contained-primary.elevation-2 Elevated
 
-h4.mt-4 Outline buttons
-p.
-  Outline buttons are transparent and don't have shadows at all.
-  It's a little bit strange to call them outline while they don't have
-  any lines at all, but one can treat "outline" as "sketch", "rough draft"
-  of buttons with shadows.
-button.mr-1.mb-1.btn.btn-outline-primary Primary
-button.mr-1.mb-1.btn.btn-outline-secondary Secondary
-button.mr-1.mb-1.btn.btn-outline-success Success
-button.mr-1.mb-1.btn.btn-outline-danger Danger
-button.mr-1.mb-1.btn.btn-outline-warning Warning
-button.mr-1.mb-1.btn.btn-outline-info Info
-button.mr-1.mb-1.btn.btn-outline-light Light
-button.mr-1.mb-1.btn.btn-outline-dark Dark
-
-h4.mt-4 Sizes
-button.mr-1.mb-1.btn.btn-primary.btn-lg Large
-button.mr-1.mb-1.btn.btn-primary Normal
-button.mr-1.mb-1.btn.btn-primary.btn-sm Small
 
 h4.mt-4 Rounded buttons
 p.
   As an addition to Boostrap 4 calsses you can use #[code .btn-rounded] class.
   It adapts button's size according to the previous #[code .btn-sm]
   or #[code .btn-lg] class usage.
-button.mr-1.mb-1.btn.btn-primary.btn-lg.btn-rounded
-  i.material-icons more_vert
+button.mr-1.mb-1.btn.btn-contained-danger.btn-lg.btn-rounded.elevation-2
+  i.material-icons close
 button.mr-1.mb-1.btn.btn-primary.btn-rounded
   i.material-icons add
 button.mr-1.mb-1.btn.btn-primary.btn-sm.btn-rounded
@@ -48,7 +24,7 @@ button.mr-1.mb-1.btn.btn-primary.btn-sm.btn-rounded
 h4.mt-4 Others
 button.mr-1.mb-1.btn.btn-primary(disabled) Disabled
 .btn-group.mr-1.mb-1
-  button.btn.btn-secondary Button
-  button.btn.btn-secondary Group
-  button.btn.btn-secondary Example
+  button.btn.btn-outline-dark Dark
+  button.btn.btn-outline-dark.border-left-0.border-right-0 Button
+  button.btn.btn-outline-dark Group
 button.mr-1.mb-1.btn.btn-link Link

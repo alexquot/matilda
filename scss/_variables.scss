@@ -23,21 +23,25 @@ $blue: #2196f3 !default;
 $indigo: #3f51b5 !default;
 $purple: #9c27b0 !default;
 $pink: #e91e63 !default;
-$red: #f44336 !default;
-$orange: #ff9800 !default;
-$yellow: #ffeb3b !default;
-$green: #4caf50 !default;
-$teal: #009688 !default;
-$cyan: #00bcd4 !default;
 
-$primary: #009eaf !default;
-$secondary: $gray-600 !default;
+//$red: #E53935 !default;
+$red: #b00020 !default;
+
+$orange: #f57f17 !default;
+$yellow: #ffeb3b !default;
+$green: #2e7b32 !default;
+$teal: #009688 !default;
+$cyan: #039be5 !default;
+
+//$primary: #009eaf !default;
+$primary: #6200ee !default;
+$secondary: $gray-700 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $orange !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-800 !default;
+$dark: $gray-900 !default;
 
 $yiq-contrasted-threshold: 200 !default;
 $yiq-text-dark: $gray-900 !default;
@@ -82,14 +86,14 @@ $spacers: map-merge(
 // Body
 //
 
-$body-bg: $gray-50 !default;
-$body-color: rgba(0, 0, 0, 0.87) !default;
+$body-bg: $white !default;
+$body-color: rgba(0, 0, 0, 0.7) !default;
 
 //
 // Links
 //
 
-$link-color: $primary !default;
+$link-color: $gray-900 !default;
 $link-decoration: none !default;
 $link-hover-color: $link-color !default;
 $link-hover-decoration: none !default;
@@ -99,9 +103,9 @@ $link-hover-decoration: none !default;
 //
 
 $border-width: 1px !default;
-$border-color: $gray-300 !default;
+$border-color: $gray-400 !default;
 
-$border-radius: 2px !default;
+$border-radius: 4px !default;
 $border-radius-lg: $border-radius !default;
 $border-radius-sm: $border-radius !default;
 
@@ -114,8 +118,8 @@ $component-active-bg: $primary !default;
 
 $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
 $font-family-monospace: 'Roboto Mono', monospace !default;
-$font-size-base: 1rem !default;
 
+$font-size-base: 1rem !default;
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
 
@@ -124,6 +128,9 @@ $font-weight-normal: 400 !default;
 $font-weight-bold: 500 !default;
 
 $text-muted: rgba(0, 0, 0, 0.54) !default;
+
+$headings-font-weight: $font-weight-normal !default;
+$headings-color: rgba(0, 0, 0, 0.95) !default;
 
 //
 // Tables
@@ -145,7 +152,7 @@ $input-btn-border-width: 0rem !default;
 // Buttons
 //
 
-$btn-padding-multiplier-x: 1.25;
+$btn-padding-multiplier-x: 1.1;
 $btn-padding-multiplier-y: 0.5;
 
 $btn-padding-y: $font-size-base * $btn-padding-multiplier-y !default;
@@ -157,7 +164,7 @@ $btn-padding-x-sm: $font-size-sm * $btn-padding-multiplier-x !default;
 $btn-padding-y-lg: $font-size-lg * $btn-padding-multiplier-y !default;
 $btn-padding-x-lg: $font-size-lg * $btn-padding-multiplier-x !default;
 
-$btn-box-shadow: elevation-shadow(2) !default;
+$btn-box-shadow: none !default;
 $btn-active-box-shadow: $btn-box-shadow !default;
 $btn-focus-box-shadow: $btn-box-shadow !default;
 
@@ -418,7 +425,13 @@ $kbd-bg: $dark !default;
 // Theme specific variables
 //
 
+$enable-ripple: true !default;
+
+$btn-text-transform: uppercase;
+
 $code-bg: $dark !default;
 $code-border-radius: $border-radius !default;
+$pre-bg: $dark;
+
 $code-padding: 0 0.2rem !default;
 $pre-code-padding: 1rem !default;
