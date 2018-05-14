@@ -1,28 +1,24 @@
-h1.mt-5(id="cards") Cards
-.row
-  .col-md-6
-    .card.mb-4
-      .card-header
-        h2.mt-2 Card header
-        p.
-          Card header serves mostly for logical content separation.
-          But you still can wrap it in h tag like above.
-      .card-body This is a card body.
-        .card.mt-3
-          .card-body Nested cards are flat.
-  .col-md-6
-    .card
-      .card-header
-        ul.nav.nav-tabs.card-header-tabs
-          li.nav-item
-            a.nav-link.active(href) ACTIVE
-          li.nav-item
-            a.nav-link(href) INACTIVE
-      .card-body Nav tabs example is here.
-    .card.text-white.bg-dark.mt-4
-      .card-body
-        h4.card-title Dark card
-        p.card-text.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
+hr.my-6
+h1.display-4(id="cards") Cards
+.mat-demo
+  .row
+    .col-md-6
+      .card
+        .card-header
+          ul.nav.nav-tabs.card-header-tabs
+            li.nav-item
+              a.nav-link.active(href) ACTIVE
+            li.nav-item
+              a.nav-link(href) INACTIVE
+        hr.m-0
+        .card-body
+          p Nav tabs example is here.
+          .card
+            .card-body Nested cards are flat.
+    .col-md-6
+      .card.text-white.bg-dark
+        .card-body
+          h4.card-title.text-white Dark card
+          p.card-text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam.
