@@ -11,6 +11,11 @@ html
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js")
     script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js")
     style.
+      .mat-demo {
+        background-color: rgba(0, 0, 0, 0.05);
+        padding: 3rem;
+        margin-bottom: 1rem;
+      }
       .mat-menu {
         margin-top: 3.6rem;
         min-width: 200px;
@@ -21,8 +26,6 @@ html
         padding: 0;
         margin-top: 5px;
       }
-      .jumbotron h1 { font-size: 56px; }
-      .jumbotron h2 { font-size: 40px; }
       .jumbotron p { font-size: 18px; }
       :target::before {
         content: "";
@@ -31,10 +34,11 @@ html
         margin: -100px 0 0;
       }
   body
-    nav.navbar.navbar-expand.navbar-dark.bg-dark.sticky-top
-      a.nav-link(href="./index.html") Matilda
-      a.nav-link(href="./docs.html") Docs
-      a.nav-link.ml-auto(href="https://github.com/alexquot/matilda") GitHub
+    nav.navbar.navbar-expand.sticky-top.navbar-dark.bg-dark
+      .navbar-nav.w-100
+        a.nav-link.font-weight-light(href="./index.html") MATILDA
+        a.nav-link.font-weight-light(href="./docs.html") DOCS
+        a.nav-link.font-weight-light.ml-auto(href="https://github.com/alexquot/matilda") GITHUB
 
     block content
     script.

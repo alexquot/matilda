@@ -50,22 +50,13 @@ a[href],
 }
 
 .nav-tabs {
-  border-bottom: $border-width solid $card-border-color;
-
   a {
     @include ripple();
 
     color: $text-muted;
 
     &.active {
-      color: $nav-tabs-link-active-color;
-    }
-  }
-
-  .nav-item .nav-link {
-    &.active {
-      border-bottom: $border-width * 2 solid $primary;
-      margin-bottom: -$border-width;
+      @include underline-after(2 * $border-width, $primary);
     }
   }
 }
@@ -76,38 +67,31 @@ a[href],
 }
 
 //
+// Tables
+//
+
+th {
+  color: $text-muted;
+  font: $table-head-font;
+}
+
+td {
+  font: $table-font;
+}
+
+//
 // Forms
 //
 
-@mixin border-bottom-accent($padding-bottom) {
-  border-bottom: $border-width solid $input-border-color;
-  &:disabled { border-bottom-style: dashed; }
-
-  &:focus,
-  &.focus {
-    padding-bottom: calc(#{$padding-bottom} - #{$border-width});
-    border-bottom: $border-width * 2 solid $input-focus-border-color;
-  }
-}
-
-.form-control,
-.custom-select {
-  @include border-bottom-accent($input-padding-y);
-}
-
-.input-group-sm .form-control,
-.custom-select-sm {
-  @include border-bottom-accent($input-padding-y-sm);
-}
-
-.input-group-lg .form-control,
-.custom-select-lg {
-  @include border-bottom-accent($input-padding-y-lg);
-}
-
 $input-addon-padding: 0.5rem;
-.input-group-prepend .input-group-text { padding-right: $input-addon-padding; }
-.input-group-append .input-group-text { padding-left: $input-addon-padding; }
+
+.input-group-prepend .input-group-text {
+  padding-right: $input-addon-padding;
+}
+
+.input-group-append .input-group-text {
+  padding-left: $input-addon-padding;
+}
 
 .custom-control label:hover,
 .custom-select {
@@ -131,8 +115,14 @@ select.custom-select {
 .btn:not(.btn-link) {
   font-size: $font-size-sm;
   text-transform: $btn-text-transform;
-  &.btn-sm { font-size: $font-size-sm * 0.875; }
-  &.btn-lg { font-size: $font-size-base; }
+
+  &.btn-sm {
+    font-size: $font-size-sm * 0.875;
+  }
+
+  &.btn-lg {
+    font-size: $font-size-base;
+  }
 }
 
 @mixin btn-any-state() {

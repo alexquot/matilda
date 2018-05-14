@@ -1,34 +1,37 @@
-h1.mt-5(id="dynamic") Dynamic
-button.mr-1.mb-1.btn.btn-primary(
-  data-toggle="popover"
-  title="Popover title"
-  data-content="And here's some amazing content. It's very engaging. Right?"
-) Popover
-button.mr-1.mb-1.btn.btn-primary(
-  data-toggle="tooltip"
-  data-placement="top"
-  title="Tooltip content here"
-) Tooltip
-button.mr-1.mb-1.btn.btn-primary(
-  data-toggle="modal"
-  data-target="#exampleModal"
-) Modal
+hr.my-6
+h1.display-4(id="dynamic") Dynamic
+.mat-demo.text-center
+  button.mr-1.mb-1.btn.btn-contained-primary.elevation-2(
+    data-toggle="popover"
+    title="Popover title"
+    data-content="And here's some amazing content. It's very engaging. Right?"
+  ) Popover
+  button.mr-1.mb-1.btn.btn-contained-primary.elevation-2(
+    data-toggle="tooltip"
+    data-placement="top"
+    title="Tooltip content here"
+  ) Tooltip
+  button.mr-1.mb-1.btn.btn-contained-primary.elevation-2(
+    data-toggle="modal"
+    data-target="#exampleModal"
+  ) Modal
+  span.dropdown
+   button.mr-1.mb-1.btn.btn-contained-primary.elevation-2.dropdown-toggle#dropdownMenuButton(
+     data-toggle="dropdown"
+     aria-haspopup="true"
+     aria-expanded="false"
+   ) Dropdown
+   .dropdown-menu(aria-labelledby="dropdownMenuButton")
+     a.dropdown-item(href) Action
+     a.dropdown-item(href) Another
+     a.dropdown-item(href) Something
+
 #exampleModal.modal.fade
   .modal-dialog(role="document")
     .modal-content
       .modal-header
         h5#exampleModalLabel.modal-title Modal title
       .modal-body Modal body
-      .modal-footer
-        button.btn.btn-outline-dark(data-dismiss="modal") Close
-        button.btn.btn-outline-dark.active Save changes
-span.dropdown
- button.mr-1.mb-1.btn.btn-primary.dropdown-toggle#dropdownMenuButton(
-   data-toggle="dropdown"
-   aria-haspopup="true"
-   aria-expanded="false"
- ) Dropdown
- .dropdown-menu(aria-labelledby="dropdownMenuButton")
-   a.dropdown-item(href) Action
-   a.dropdown-item(href) Another
-   a.dropdown-item(href) Something
+      .modal-footer.p-0
+        button.btn.btn-primary.p-2.mr-2.mb-2(data-dismiss="modal") Close
+        button.btn.btn-primary.p-2.mr-2.mb-2 Save changes

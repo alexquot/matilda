@@ -1,30 +1,29 @@
-h1.mt-5(id="buttons") Buttons
-
+hr.my-6
+h1.display-4(id="buttons") Buttons
 p.
   Buttons have the ripple effect. You can also use
   #[code .ripple] class and #[code ripple($color: $black)] mixin in your SASS code.
-button.mr-1.mb-1.btn.btn-primary Text
-button.mr-1.mb-1.btn.btn-outline-primary Outline
-button.mr-1.mb-1.btn.btn-contained-primary Contained
-button.mr-1.mb-1.btn.btn-contained-primary.elevation-2 Elevated
+.mat-demo.text-center
+  button.mr-1.mb-1.btn.btn-primary Text
+  button.mr-1.mb-1.btn.btn-outline-primary Outline
+  button.mr-1.mb-1.btn.btn-contained-primary Contained
+  button.mr-1.mb-1.btn.btn-contained-primary.elevation-2 Elevated
 
 
-h4.mt-4 Rounded buttons
 p.
   As an addition to Boostrap 4 calsses you can use #[code .btn-rounded] class.
   It adapts button's size according to the previous #[code .btn-sm]
   or #[code .btn-lg] class usage.
-button.mr-1.mb-1.btn.btn-contained-danger.btn-lg.btn-rounded.elevation-2
-  i.material-icons close
-button.mr-1.mb-1.btn.btn-primary.btn-rounded
-  i.material-icons add
-button.mr-1.mb-1.btn.btn-primary.btn-sm.btn-rounded
-  i.material-icons remove
+.mat-demo.text-center
+  button.mr-2.mb-1.btn.btn-contained-danger.btn-lg.btn-rounded.elevation-6
+    i.material-icons.hover-spin close
+  button.mr-1.mb-1.btn.btn-contained-dark.btn-rounded.elevation-2
+    i.material-icons add
 
-h4.mt-4 Others
-button.mr-1.mb-1.btn.btn-primary(disabled) Disabled
-.btn-group.mr-1.mb-1
-  button.btn.btn-outline-dark Dark
-  button.btn.btn-outline-dark.border-left-0.border-right-0 Button
-  button.btn.btn-outline-dark Group
-button.mr-1.mb-1.btn.btn-link Link
+.mat-demo.text-center
+  button.mr-1.mb-1.btn.btn-primary(disabled) Disabled
+  .btn-group.mr-1.mb-1
+    button.btn.btn-outline-dark Dark
+    button.btn.btn-outline-dark.border-left-0.border-right-0 Button
+    button.btn.btn-outline-dark Group
+  button.mr-1.mb-1.btn.btn-link Link
