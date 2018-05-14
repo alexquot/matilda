@@ -23,21 +23,21 @@ $blue: #2196f3 !default;
 $indigo: #3f51b5 !default;
 $purple: #9c27b0 !default;
 $pink: #e91e63 !default;
-$red: #f44336 !default;
-$orange: #ff9800 !default;
+$red: #b00020 !default;
+$orange: #f57f17 !default;
 $yellow: #ffeb3b !default;
-$green: #4caf50 !default;
+$green: #2e7b32 !default;
 $teal: #009688 !default;
-$cyan: #00bcd4 !default;
+$cyan: #039be5 !default;
 
-$primary: #009eaf !default;
-$secondary: $gray-600 !default;
+$primary: #6200ee !default;
+$secondary: $gray-700 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $orange !default;
 $danger: $red !default;
 $light: $gray-100 !default;
-$dark: $gray-800 !default;
+$dark: $gray-900 !default;
 
 $yiq-contrasted-threshold: 200 !default;
 $yiq-text-dark: $gray-900 !default;
@@ -51,6 +51,7 @@ $enable-rounded: true !default;
 $enable-shadows: true !default;
 $enable-gradients: false !default;
 $enable-transitions: true !default;
+$enable-ripple: true !default; // Matilda
 
 //
 // Spacing
@@ -70,6 +71,7 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
+    6: ($spacer * 6),
     "cx": $card-spacer-x,
     "cxn": -$card-spacer-x,
     "cy": $card-spacer-y,
@@ -82,14 +84,14 @@ $spacers: map-merge(
 // Body
 //
 
-$body-bg: $gray-50 !default;
-$body-color: rgba(0, 0, 0, 0.87) !default;
+$body-bg: $white !default;
+$body-color: rgba(0, 0, 0, 0.7) !default;
 
 //
 // Links
 //
 
-$link-color: $primary !default;
+$link-color: $gray-900 !default;
 $link-decoration: none !default;
 $link-hover-color: $link-color !default;
 $link-hover-decoration: none !default;
@@ -99,9 +101,9 @@ $link-hover-decoration: none !default;
 //
 
 $border-width: 1px !default;
-$border-color: $gray-300 !default;
+$border-color: $gray-400 !default;
 
-$border-radius: 2px !default;
+$border-radius: 4px !default;
 $border-radius-lg: $border-radius !default;
 $border-radius-sm: $border-radius !default;
 
@@ -114,10 +116,11 @@ $component-active-bg: $primary !default;
 
 $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
 $font-family-monospace: 'Roboto Mono', monospace !default;
-$font-size-base: 1rem !default;
 
+$font-size-base: 1rem !default;
 $font-size-lg: ($font-size-base * 1.25) !default;
 $font-size-sm: ($font-size-base * 0.875) !default;
+$font-size-xs: ($font-size-base * 0.75) !default; // Matilda
 
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
@@ -125,14 +128,24 @@ $font-weight-bold: 500 !default;
 
 $text-muted: rgba(0, 0, 0, 0.54) !default;
 
+$headings-font-weight: $font-weight-normal !default;
+$headings-color: rgba(0, 0, 0, 0.95) !default;
+
 //
 // Tables
 //
+
+$table-cell-padding: 1rem !default;
+$table-cell-padding-sm: 0.5rem !default;
 
 $table-bg: transparent !default;
 $table-accent-bg: rgba(0, 0, 0, 0.01) !default;
 $table-hover-bg: rgba(0, 0, 0, 0.02) !default;
 $table-border-color: $gray-300 !default;
+$table-head-color: $text-muted !default;
+
+$table-font: $font-weight-normal $font-size-sm $font-family-base !default; // Matilda
+$table-head-font: $font-weight-bold $font-size-xs $font-family-base !default; // Matilda
 
 //
 // Buttons + Forms
@@ -145,7 +158,7 @@ $input-btn-border-width: 0rem !default;
 // Buttons
 //
 
-$btn-padding-multiplier-x: 1.25;
+$btn-padding-multiplier-x: 1.1;
 $btn-padding-multiplier-y: 0.5;
 
 $btn-padding-y: $font-size-base * $btn-padding-multiplier-y !default;
@@ -157,7 +170,7 @@ $btn-padding-x-sm: $font-size-sm * $btn-padding-multiplier-x !default;
 $btn-padding-y-lg: $font-size-lg * $btn-padding-multiplier-y !default;
 $btn-padding-x-lg: $font-size-lg * $btn-padding-multiplier-x !default;
 
-$btn-box-shadow: elevation-shadow(2) !default;
+$btn-box-shadow: none !default;
 $btn-active-box-shadow: $btn-box-shadow !default;
 $btn-focus-box-shadow: $btn-box-shadow !default;
 
@@ -167,6 +180,8 @@ $btn-transition:
   background-color none,
   border-color none,
   box-shadow 0.15s ease-in-out !default;
+
+$btn-text-transform: uppercase; // Matilda
 
 //
 // Forms
@@ -250,6 +265,10 @@ $nav-tabs-link-active-bg: transparent !default;
 $navbar-padding-y: 1rem !default;
 $navbar-padding-x: 1.5rem !default;
 
+$navbar-dark-color: rgba($white, 0.7) !default;
+$navbar-dark-hover-color: $white !default;
+$navbar-dark-active-color: $white !default;
+
 //
 // Pagination
 //
@@ -317,6 +336,7 @@ $alert-bg-level: 0rem !default;
 // Progress bars
 //
 
+$progress-bg: rgba(0, 0, 0, 0.15);
 $progress-height: 5px !default;
 $progress-border-radius: 0 !default;
 $progress-box-shadow: none !default;
@@ -408,17 +428,14 @@ $progress-box-shadow: none !default;
 // Code
 //
 
-$code-color: $light !default;
-$pre-color: $light !default;
-$kbd-color: $light !default;
-$kbd-bg: $dark !default;
+$code-bg: rgba(0, 0, 0, 0.07) !default; // Matilda
+$code-color: $body-color !default;
+$code-padding: 0 0.2rem !default; // Matilda
+$code-border-radius: $border-radius !default; // Matilda
 
-//
-// Matilda
-// Theme specific variables
-//
+$pre-bg: rgba(0, 0, 0, 0.07); // Matilda
+$pre-color: $body-color !default;
+$pre-code-padding: 1rem !default; // Matilda
 
-$code-bg: $dark !default;
-$code-border-radius: $border-radius !default;
-$code-padding: 0 0.2rem !default;
-$pre-code-padding: 1rem !default;
+$kbd-bg: rgba(0, 0, 0, 0.07) !default;
+$kbd-color: $body-color !default;

@@ -1,45 +1,57 @@
-h1.mt-5(id="forms") Forms
-.form-row
-  .form-group.col-md-6
-    input.form-control(placeholder="This is an input")
-  .form-group.col-md-6
-    select.custom-select
-      option Custom select
-      option Another option
-      option And another one
-.form-row
-  .form-group.col-md-6
-    input.form-control(placeholder="This input is disabled" disabled)
-  .form-group.col-md-6
-    .input-group
-      .input-group-prepend
-        span.input-group-text $
-        span.input-group-text 0.00
-      input.form-control(placeholder="Addon example")
-.form-row
-  .form-group.col-md-6
-    input.form-control.is-valid(placeholder="A valid one")
-    .valid-feedback Everything is ok
-  .form-group.col-md-6
-    input.form-control.is-invalid(placeholder="Invalid")
-    .invalid-feedback Feedback message is here
-.form-row
-  .form-group.col-md-6
-    .form-group
-      .input-group.input-group-sm
-        input.form-control(placeholder="Small input")
-    .form-group
-      .input-group.input-group-lg
-        input.form-control(placeholder="A large one")
-  .form-group.col-md-6
-    .form-group
-      .custom-control.custom-checkbox
-        input#customCheckbox.custom-control-input(type="checkbox" checked)
-        label.custom-control-label(for="customCheckbox") Custom checkbox
-    .form-group
-      .custom-control.custom-radio
-        input#customRadio1.custom-control-input(name="customRadio" type="radio" checked)
-        label.custom-control-label(for="customRadio1") Custom radio 1
-      .custom-control.custom-radio
-        input#customRadio2.custom-control-input(name="customRadio" type="radio")
-        label.custom-control-label(for="customRadio2") Custom radio 2
+hr.my-6
+h1.display-4(id="forms") Forms
+.mat-demo
+  .card
+    .card-body
+      .form-row
+        .form-group.col-md-6
+          input.form-control(placeholder="This is an input")
+          .form-underline
+        .form-group.col-md-6
+          select.custom-select
+            option Custom select
+            option Another option
+            option And another one
+          .form-underline
+      .form-row
+        .form-group.col-md-6
+          input.form-control(placeholder="This input is disabled" disabled)
+          .form-underline
+        .form-group.col-md-6
+          .input-group
+            .input-group-prepend
+              span.input-group-text $
+              span.input-group-text 0.00
+            input.form-control(placeholder="Addon example")
+            .form-underline
+      .form-row
+        .form-group.col-md-6
+          input.form-control.is-valid(placeholder="A valid one")
+          .form-underline
+          .valid-feedback Everything is ok
+        .form-group.col-md-6
+          input.form-control.is-invalid(placeholder="Invalid")
+          .form-underline
+          .invalid-feedback Feedback message is here
+      .form-row
+        .form-group.col-md-6
+          .form-group
+            .input-group.input-group-sm
+              input.form-control(placeholder="Small input")
+              .form-underline
+          .form-group
+            .input-group.input-group-lg
+              input.form-control(placeholder="A large one")
+              .form-underline
+        .form-group.col-md-6
+          .form-group
+            .custom-control.custom-checkbox
+              input#customCheckbox.custom-control-input(type="checkbox" checked)
+              label.custom-control-label(for="customCheckbox") Custom checkbox
+          .form-group
+            .custom-control.custom-radio
+              input#customRadio1.custom-control-input(name="customRadio" type="radio" checked)
+              label.custom-control-label(for="customRadio1") Custom radio 1
+            .custom-control.custom-radio
+              input#customRadio2.custom-control-input(name="customRadio" type="radio")
+              label.custom-control-label(for="customRadio2") Custom radio 2

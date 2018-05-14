@@ -1,22 +1,20 @@
 extends layouts/base.pug
 
 block content
-  .jumbotron.jumbotron-fluid.bg-primary.text-white
+  .jumbotron.jumbotron-fluid.bg-dark
     .container
-      h2.font-weight-light Docs
+      h1.display-4.text-white Docs
   .container.pb-5.pt-2
-    .row
-      .col-md-9.col-lg-10
-        include includes/getting-started.pug
-        include includes/buttons.pug
-        include includes/cards.pug
-        include includes/forms.pug
-        include includes/indicators.pug
-        include includes/typography.pug
-        include includes/tables.pug
-        include includes/dynamic.pug
-        include includes/theming.pug
-      .col-md-3.col-lg-2.d-none.d-md-block.px-4
+    include includes/usage
+    include includes/buttons.pug
+    include includes/cards.pug
+    include includes/forms.pug
+    include includes/indicators.pug
+    include includes/typography.pug
+    include includes/tables.pug
+    include includes/dynamic.pug
+    include includes/theming.pug
+      //.col-md-3.col-lg-2.d-none.d-md-block.px-4
         nav.nav.flex-column.sticky-top.mat-menu
           a.nav-link.text-muted(href="#getting-started") Getting started
           a.nav-link.text-muted(href="#buttons") Buttons

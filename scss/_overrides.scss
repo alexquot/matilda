@@ -1,4 +1,13 @@
 //
+// Links
+//
+
+a[href],
+.btn-link {
+  font-weight: $font-weight-bold;
+}
+
+//
 // Card
 //
 
@@ -41,22 +50,13 @@
 }
 
 .nav-tabs {
-  border-bottom: $border-width solid $card-border-color;
-
   a {
     @include ripple();
 
     color: $text-muted;
 
     &.active {
-      color: $nav-tabs-link-active-color;
-    }
-  }
-
-  .nav-item .nav-link {
-    &.active {
-      border-bottom: $border-width * 2 solid $primary;
-      margin-bottom: -$border-width;
+      @include underline-after(2 * $border-width, $primary);
     }
   }
 }
@@ -67,38 +67,31 @@
 }
 
 //
+// Tables
+//
+
+th {
+  color: $text-muted;
+  font: $table-head-font;
+}
+
+td {
+  font: $table-font;
+}
+
+//
 // Forms
 //
 
-@mixin border-bottom-accent($padding-bottom) {
-  border-bottom: $border-width solid $input-border-color;
-  &:disabled { border-bottom-style: dashed; }
-
-  &:focus,
-  &.focus {
-    padding-bottom: calc(#{$padding-bottom} - #{$border-width});
-    border-bottom: $border-width * 2 solid $input-focus-border-color;
-  }
-}
-
-.form-control,
-.custom-select {
-  @include border-bottom-accent($input-padding-y);
-}
-
-.input-group-sm .form-control,
-.custom-select-sm {
-  @include border-bottom-accent($input-padding-y-sm);
-}
-
-.input-group-lg .form-control,
-.custom-select-lg {
-  @include border-bottom-accent($input-padding-y-lg);
-}
-
 $input-addon-padding: 0.5rem;
-.input-group-prepend .input-group-text { padding-right: $input-addon-padding; }
-.input-group-append .input-group-text { padding-left: $input-addon-padding; }
+
+.input-group-prepend .input-group-text {
+  padding-right: $input-addon-padding;
+}
+
+.input-group-append .input-group-text {
+  padding-left: $input-addon-padding;
+}
 
 .custom-control label:hover,
 .custom-select {
@@ -121,11 +114,21 @@ select.custom-select {
 
 .btn:not(.btn-link) {
   font-size: $font-size-sm;
-  &.btn-sm { font-size: $font-size-sm * 0.875; }
-  &.btn-lg { font-size: $font-size-base; }
+  text-transform: $btn-text-transform;
+
+  &.btn-sm {
+    font-size: $font-size-sm * 0.875;
+  }
+
+  &.btn-lg {
+    font-size: $font-size-base;
+  }
 }
 
-@mixin apply-to-active-btn() {
+@mixin btn-any-state() {
+  &,
+  &:hover,
+  &:focus,
   &.btn:not(:disabled):not(.disabled):active,
   &.btn:not(:disabled):not(.disabled).active {
     @content;
@@ -134,43 +137,38 @@ select.custom-select {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @include ripple(color-yiq($value));
-    @include button-variant($value, $value, $value, $value, $value, $value);
+    @include button-outline-variant($value, $value, transparentize($value, 0.9));
+
+    @include btn-any-state {
+      color: $value;
+    }
+
+    @if $enable-ripple {
+      @include ripple($value);
+    }
   }
 
   .btn-outline-#{$color} {
-    @include ripple($value);
+    @extend .btn-#{$color};
 
-    &:hover {
-      background-color: transparentize($value, 0.85);
-      color: $value;
+    @include btn-any-state {
+      border-color: $border-color;
+      border-width: $border-width;
     }
 
-    @include apply-to-active-btn {
-      background-color: transparentize($value, 0.85);
-      box-shadow: none;
-      color: $value;
-      &:focus { box-shadow: none; }
-    }
+    padding: calc(#{$btn-padding-y} - #{$border-width}) $btn-padding-x;
   }
-}
 
-.btn-link,
-.btn-link:hover,
-.btn-link:active,
-.btn-link:focus {
-  @include apply-to-active-btn { box-shadow: none; }
-}
+  .btn-contained-#{$color} {
+    @include button-variant(
+      $value, $value,
+      $value, $value,
+      $value, $value
+    );
 
-.btn-group {
-  @include elevation(2);
-
-  border-radius: $btn-border-radius;
-
-  .btn {
-    box-shadow: none;
-
-    @include apply-to-active-btn { box-shadow: none; }
+    @if $enable-ripple {
+      @include ripple(color-yiq($value));
+    }
   }
 }
 
@@ -290,5 +288,6 @@ code {
 pre code {
   display: block;
   padding: $pre-code-padding;
+  background-color: $pre-bg;
   overflow-x: auto;
 }
