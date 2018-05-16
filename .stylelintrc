@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-idiomatic-order",
   "rules": {
-    "length-zero-no-unit": null
+    "length-zero-no-unit": null,
+    "string-quotes": "single"
   }
 }

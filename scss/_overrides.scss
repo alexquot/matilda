@@ -99,13 +99,20 @@ $input-addon-padding: 0.5rem;
 }
 
 select.custom-select {
-  // idk why is this needed for .custom-select and .form-control alignment
-  height: calc(#{$custom-select-height} + #{$border-width});
   -moz-appearance: none; // Firefox
   -webkit-appearance: none; // Safari and Chrome
   appearance: none;
+}
 
-  @include transition($input-transition);
+//
+// Dropdowns
+//
+
+.dropdown-menu {
+  .dropdown-item {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-normal;
+  }
 }
 
 //

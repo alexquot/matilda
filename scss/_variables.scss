@@ -72,10 +72,10 @@ $spacers: map-merge(
     4: ($spacer * 1.5),
     5: ($spacer * 3),
     6: ($spacer * 6),
-    "cx": $card-spacer-x,
-    "cxn": -$card-spacer-x,
-    "cy": $card-spacer-y,
-    "cyn": -$card-spacer-y
+    'cx': $card-spacer-x,
+    'cxn': -$card-spacer-x,
+    'cy': $card-spacer-y,
+    'cyn': -$card-spacer-y
   ),
   $spacers
 );
@@ -224,8 +224,8 @@ $custom-select-disabled-bg: transparent !default;
 $custom-select-border-radius: 0rem !default;
 
 $custom-file-text: (
-  en: "Browse",
-  ru: "Выбрать"
+  en: 'Browse',
+  ru: 'Выбрать'
 ) !default;
 
 //
@@ -317,7 +317,7 @@ $popover-arrow-outer-color: transparent !default;
 // Modals
 //
 
-$modal-inner-padding: 1.5rem !default;
+$modal-inner-padding: 1rem !default;
 $modal-header-padding: $modal-inner-padding !default;
 $modal-dialog-margin: 1rem !default;
 $modal-dialog-margin-y-sm-up: 5rem !default;
