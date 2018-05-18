@@ -1,0 +1,106 @@
+@mixin form-control-when-float-is-above() {
+  .form-control {
+    @content;
+  }
+}
+
+@mixin form-control-when-float-is-normal() {
+  .form-control#{$placeholder-shown-selector}:not(:focus) {
+    @content;
+  }
+}
+
+@mixin form-float-state($state, $color) {
+  .was-validated &:#{$state},
+  &.is-#{$state} {
+    ~ .form-float {
+      color: $color;
+    }
+  }
+}
+
+.form-float-container {
+  position: relative;
+  display: block;
+  cursor: text;
+
+  .form-control {
+    padding-top: $input-padding-y + $form-float-container-padding-y;
+    padding-right: 0;
+    padding-left: 0;
+
+    &::placeholder {
+      transition: all 0.2s;
+    }
+
+    &:focus + .form-float {
+      color: $primary;
+    }
+
+    @include form-float-state('valid', $success);
+    @include form-float-state('invalid', $danger);
+  }
+
+  .form-float {
+    position: absolute;
+    cursor: text;
+    opacity: 1;
+    pointer-events: none;
+    transform-origin: top left;
+    transition:
+      transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+      top 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  @include form-control-when-float-is-normal {
+    &::placeholder {
+      opacity: 0;
+    }
+
+    ~ .form-float {
+      top: $input-padding-y + $form-float-container-padding-y;
+      transform: scale(1);
+    }
+  }
+
+  @include form-control-when-float-is-above {
+    &::placeholder {
+      opacity: 1;
+    }
+
+    ~ .form-float {
+      top: $form-float-above-top;
+      color: $input-placeholder-color;
+      transform: scale(0.8);
+    }
+  }
+}
+
+.form-float-container-filled {
+  background-color: $form-float-container-filled-bg;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+
+  .form-control {
+    padding-right: $form-float-container-padding-x;
+    padding-left: $form-float-container-padding-x;
+  }
+
+  .form-float {
+    left: $form-float-container-padding-x;
+  }
+
+  @include form-control-when-float-is-normal {
+    ~ .form-float {
+      top: 50%;
+      transform: scale(1) translateY(-50%);
+    }
+  }
+
+  @include form-control-when-float-is-above {
+    ~ .form-float {
+      top: $form-float-above-top;
+      transform: scale(0.8) translateY(0);
+    }
+  }
+}

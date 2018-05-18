@@ -8,7 +8,8 @@
     "scss": "gulp scss",
     "views": "gulp views",
     "build": "gulp scss && gulp views",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "list-custom": "cat scss/_variables.scss | grep Matilda | sed -e 's|\\s*//\\s*Matilda||'"
   },
   "author": "Alex Quot",
   "license": "MIT",

@@ -1,57 +1,68 @@
 hr.my-6
 h1.display-4(id="forms") Forms
+p.
+  Basic form controls don't have any complex styling,
+  borders or floating labels. It makes easy to use them as
+  building blocks while creating other components.
 .mat-demo
-  .card
-    .card-body
-      .form-row
-        .form-group.col-md-6
-          input.form-control(placeholder="This is an input")
-          .form-underline
-        .form-group.col-md-6
-          select.custom-select
-            option Custom select
-            option Another option
-            option And another one
-          .form-underline
-      .form-row
-        .form-group.col-md-6
-          input.form-control(placeholder="This input is disabled" disabled)
-          .form-underline
-        .form-group.col-md-6
-          .input-group
+  .row
+    .col-lg-7.mx-auto
+      input.form-control(placeholder="Basic .form-control")
+      .card.mt-3.px-2
+        input.form-control.form-control-sm(placeholder="Any questions?")
+      .card.mt-3.px-2
+        .input-group
+          .input-group-prepend
             .input-group-prepend
-              span.input-group-text $
-              span.input-group-text 0.00
-            input.form-control(placeholder="Addon example")
-            .form-underline
+              .input-group-text.pl-1
+                i.material-icons.text-muted search
+            input.form-control.form-control-lg(placeholder="Search")
+
+p.
+  One can add simple accent line and line ripple by adding
+  #[code .form-underline] element. You don't need additional classes
+  for small or large inputs.
+.mat-demo
+  .row
+    .col-lg-7.mx-auto
       .form-row
-        .form-group.col-md-6
-          input.form-control.is-valid(placeholder="A valid one")
+        .col-lg.mb-3.mb-lg-0
+          input.form-control(placeholder="Input with a line under")
           .form-underline
-          .valid-feedback Everything is ok
-        .form-group.col-md-6
-          input.form-control.is-invalid(placeholder="Invalid")
+        .col-lg
+          input.form-control(placeholder="Disabled input" disabled)
           .form-underline
-          .invalid-feedback Feedback message is here
+
+p.
+  Add a custom styled label for the float label element with a
+  #[code .form-float-container] and #[code .form-float] elements. You can also use
+  #[code .form-float-container-filled] class to make your text field look filled.
+.mat-demo
+  .row
+    .col-lg-7.mx-auto
+      .form-row.mb-3
+        .col-lg.mt-auto
+          input.form-control(placeholder="Basic input")
+          .form-underline
+        .col-lg
+          .form-float-container
+            .input-group
+              input.form-control(placeholder=" ")
+              .form-float With float label
+              .form-underline
       .form-row
-        .form-group.col-md-6
-          .form-group
-            .input-group.input-group-sm
-              input.form-control(placeholder="Small input")
+        .col-lg.mb-3.mb-lg-0
+          .form-float-container.form-float-container-filled
+            .input-group
+              input.form-control(placeholder=" ")
+              .form-float Filled input
               .form-underline
-          .form-group
-            .input-group.input-group-lg
-              input.form-control(placeholder="A large one")
+        .col-lg
+          .form-float-container.form-float-container-filled
+            .input-group
+              input.form-control.is-invalid(placeholder=" " value="Very wrong")
+              .form-float .is-invalid + icon
+              .input-group-append
+                .input-group-text.mx-3
+                  i.material-icons done
               .form-underline
-        .form-group.col-md-6
-          .form-group
-            .custom-control.custom-checkbox
-              input#customCheckbox.custom-control-input(type="checkbox" checked)
-              label.custom-control-label(for="customCheckbox") Custom checkbox
-          .form-group
-            .custom-control.custom-radio
-              input#customRadio1.custom-control-input(name="customRadio" type="radio" checked)
-              label.custom-control-label(for="customRadio1") Custom radio 1
-            .custom-control.custom-radio
-              input#customRadio2.custom-control-input(name="customRadio" type="radio")
-              label.custom-control-label(for="customRadio2") Custom radio 2

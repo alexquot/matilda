@@ -2,6 +2,8 @@
 // Matilda
 //
 
+$placeholder-shown-selector: ':placeholder-shown'; // Matilda
+
 //
 // Color system
 //
@@ -187,6 +189,8 @@ $btn-text-transform: uppercase; // Matilda
 // Forms
 //
 
+$input-padding-y: 0.5rem !default;
+
 $input-padding-x: 0rem !default;
 $input-padding-x-sm: 0rem !default;
 $input-padding-x-lg: 0rem !default;
@@ -194,7 +198,7 @@ $input-padding-x-lg: 0rem !default;
 $input-bg: transparent !default;
 $input-disabled-bg: transparent !default;
 
-$input-color: $body-color !default;
+$input-color: opacify($body-color, 0.15) !default;
 $input-border-color: rgba(0, 0, 0, 0.3);
 $input-box-shadow: none !default;
 
@@ -227,6 +231,11 @@ $custom-file-text: (
   en: 'Browse',
   ru: 'Выбрать'
 ) !default;
+
+$form-float-above-top: 0.55rem; // Matilda
+$form-float-container-padding-y: 1.2rem; // Matilda
+$form-float-container-padding-x: 0.7rem; // Matilda
+$form-float-container-filled-bg: rgba(0, 0, 0, 0.05); // Matilda
 
 //
 // Dropdowns
@@ -431,7 +440,7 @@ $progress-box-shadow: none !default;
 $code-bg: rgba(0, 0, 0, 0.07) !default; // Matilda
 $code-color: $body-color !default;
 $code-padding: 0 0.2rem !default; // Matilda
-$code-border-radius: $border-radius !default; // Matilda
+$code-border-radius: 0 !default; // Matilda
 
 $pre-bg: rgba(0, 0, 0, 0.07); // Matilda
 $pre-color: $body-color !default;

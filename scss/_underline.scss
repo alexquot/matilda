@@ -14,7 +14,7 @@
 }
 
 //
-// Forms underline
+// Form underline
 //
 
 .form-underline {
@@ -31,10 +31,10 @@
   }
 }
 
-@mixin form-underline-form-state($state, $color) {
+@mixin form-underline-state($state, $color) {
   .was-validated &:#{$state},
   &.is-#{$state} {
-    & + .form-underline {
+    & ~ .form-underline {
       border-bottom-color: $color;
 
       &::after {
@@ -46,7 +46,7 @@
 
 .form-control,
 .custom-select {
-  &:focus + .form-underline {
+  &:focus ~ .form-underline {
     &::after {
       width: 100%;
       border-bottom-color: $input-focus-border-color;
@@ -56,11 +56,11 @@
 
   &:disabled,
   &[readonly] {
-    & + .form-underline {
+    & ~ .form-underline {
       border-bottom-style: dashed;
     }
   }
 
-  @include form-underline-form-state('valid', $success);
-  @include form-underline-form-state('invalid', $danger);
+  @include form-underline-state('valid', $success);
+  @include form-underline-state('invalid', $danger);
 }
