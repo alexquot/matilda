@@ -33,7 +33,7 @@
       transition: all 0.2s;
     }
 
-    &:focus + .form-float {
+    &:focus ~ .form-float {
       color: $primary;
     }
 
