@@ -1,6 +1,6 @@
 {
   "name": "@alexquot/matilda",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Material Design theme for Bootstrap 4",
   "main": "index.js",
   "scripts": {
