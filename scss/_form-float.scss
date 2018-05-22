@@ -99,8 +99,8 @@
 
   @include form-control-when-float-is-above {
     ~ .form-float {
-      top: $form-float-above-top;
-      transform: scale(0.8) translateY(0);
+      top: 50%;
+      transform: scale(0.8) translateY(-110%);
     }
   }
 }
