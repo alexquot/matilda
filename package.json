@@ -8,13 +8,13 @@
     "scss": "gulp scss",
     "views": "gulp views",
     "build": "gulp scss && gulp views",
-    "watch": "gulp watch",
+    "watch": "npm run build && gulp watch",
     "list-custom": "cat scss/_variables.scss | grep Matilda | sed -e 's|\\s*//\\s*Matilda||'"
   },
   "author": "Alex Quot",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "^4.1.1"
+    "bootstrap": "^4.1.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

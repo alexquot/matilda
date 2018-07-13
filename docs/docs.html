@@ -3,23 +3,7 @@
   padding: 3rem;
   margin-bottom: 1rem;
 }
-.mat-menu {
-  margin-top: 3.6rem;
-  min-width: 200px;
-  top: 100px;
-}
-.mat-menu a {
-  font-size: 0.9rem;
-  padding: 0;
-  margin-top: 5px;
-}
-.jumbotron p { font-size: 18px; }
-:target::before {
-  content: "";
-  display: block;
-  height: 100px;
-  margin: -100px 0 0;
-}</style></head><body><nav class="navbar navbar-expand sticky-top navbar-dark bg-dark"><div class="navbar-nav w-100"><a class="nav-link font-weight-light" href="./index.html">MATILDA</a><a class="nav-link font-weight-light" href="./docs.html">DOCS</a><a class="nav-link font-weight-light ml-auto" href="https://github.com/alexquot/matilda">GITHUB</a></div></nav><div class="jumbotron jumbotron-fluid bg-dark"><div class="container"><h1 class="display-4 text-white">Docs</h1></div></div><div class="container pb-5 pt-2"><h1 class="display-4 mt-5" id="getting-started">Usage</h1><p>To begin with you need to install Matilda. It was released in npm under
+.jumbotron p { font-size: 18px; }</style></head><body><nav class="navbar navbar-expand sticky-top navbar-dark bg-dark"><div class="navbar-nav w-100"><a class="nav-link font-weight-light" href="./index.html">MATILDA</a><a class="nav-link font-weight-light" href="./docs.html">DOCS</a><a class="nav-link font-weight-light ml-auto" href="https://github.com/alexquot/matilda">GITHUB</a></div></nav><div class="jumbotron jumbotron-fluid bg-dark"><div class="container"><h1 class="display-4 text-white">Docs</h1></div></div><div class="container pb-5 pt-2"><h1 class="display-4 mt-5" id="getting-started">Usage</h1><p>To begin with you need to install Matilda. It was released in npm under
 <a href="https://www.npmjs.com/package/@alexquot/matilda">@alexquot/matilda</a>
 package. If you want you can use jsDelivr CDN, go on right to the
 <a href="https://www.jsdelivr.com/package/npm/@alexquot/matilda">download page</a>.
@@ -40,7 +24,7 @@ building blocks while creating other components.</p><div class="mat-demo"><div c
 <code>.form-underline</code> element. You don't need additional classes
 for small or large inputs.</p><div class="mat-demo"><div class="row"><div class="col-lg-7 mx-auto"><div class="form-row"><div class="col-lg mb-3 mb-lg-0"><input class="form-control" placeholder="Input with a line under"><div class="form-underline"></div></div><div class="col-lg"><input class="form-control" placeholder="Disabled input" disabled><div class="form-underline"></div></div></div></div></div></div><p>Add a custom styled label for the float label element with a
 <code>.form-float-container</code> and <code>.form-float</code> elements. You can also use
-<code>.form-float-container-filled</code> class to make your text field look filled.</p><div class="mat-demo"><div class="row"><div class="col-lg-7 mx-auto"><div class="form-row mb-3"><div class="col-lg mt-auto"><input class="form-control" placeholder="Basic input"><div class="form-underline"></div></div><div class="col-lg"><div class="form-float-container"><div class="input-group"><input class="form-control" placeholder=" "><div class="form-float">With float label</div><div class="form-underline"></div></div></div></div></div><div class="form-row"><div class="col-lg mb-3 mb-lg-0"><div class="form-float-container form-float-container-filled"><div class="input-group"><input class="form-control" placeholder=" "><div class="form-float">Filled input</div><div class="form-underline"></div></div></div></div><div class="col-lg"><div class="form-float-container form-float-container-filled"><div class="input-group"><input class="form-control is-invalid" placeholder=" " value="Very wrong"><div class="form-float">.is-invalid + icon</div><div class="input-group-append"><div class="input-group-text mx-3"><i class="material-icons">done</i></div></div><div class="form-underline"></div></div></div></div></div></div></div></div><hr class="my-6"><h1 class="display-4" id="indicators">Indicators</h1><div class="mat-demo"><div class="row"><div class="col-md"><div class="alert mb-3 mb-md-0 alert-danger">Danger alert</div></div><div class="col-md"><div class="alert mb-3 mb-md-0 alert-success">Success alert</div></div><div class="col-md"><div class="alert mb-3 mb-md-0 alert-dark">Dark alert</div></div></div></div><div class="mat-demo"><div class="progress mt-0"><div class="progress-bar bg-warning w-75"></div></div><div class="progress mt-2"><div class="progress-bar bg-secondary w-50"></div></div><div class="progress mt-2"><div class="progress-bar bg-primary progress-bar-animated"></div></div></div><hr class="my-6"><h1 class="display-4" id="typography">Typography</h1><h4 class="mt-4">Basics</h4><p><a href="https://material.io/guidelines/style/typography.html">Roboto</a>
+<code>.form-float-container-filled</code> class to make your text field look filled.</p><div class="mat-demo"><div class="row"><div class="col-lg-7 mx-auto"><div class="form-row mb-3"><div class="col-lg mt-auto"><input class="form-control" placeholder="Basic input"><div class="form-underline"></div></div><div class="col-lg"><div class="form-float-container"><div class="input-group"><input class="form-control" placeholder=" "><div class="form-float">With float label</div><div class="form-underline"></div></div></div></div></div><div class="form-row"><div class="col-lg mb-3 mb-lg-0"><div class="form-float-container form-float-container-filled"><div class="input-group"><input class="form-control" placeholder=" "><div class="form-float">Filled input</div><div class="form-underline"></div></div></div></div><div class="col-lg"><div class="form-float-container form-float-container-filled"><div class="input-group"><input class="form-control is-invalid" placeholder=" " value="Very wrong"><div class="form-float">.is-invalid + icon</div><div class="input-group-append"><div class="input-group-text px-3"><i class="material-icons">done</i></div></div><div class="form-underline"></div></div></div></div></div></div></div></div><hr class="my-6"><h1 class="display-4" id="indicators">Indicators</h1><div class="mat-demo"><div class="row"><div class="col-md"><div class="alert mb-3 mb-md-0 alert-danger">Danger alert</div></div><div class="col-md"><div class="alert mb-3 mb-md-0 alert-success">Success alert</div></div><div class="col-md"><div class="alert mb-3 mb-md-0 alert-dark">Dark alert</div></div></div></div><div class="mat-demo"><div class="progress mt-0"><div class="progress-bar bg-warning w-75"></div></div><div class="progress mt-2"><div class="progress-bar bg-secondary w-50"></div></div><div class="progress mt-2"><div class="progress-bar bg-primary progress-bar-animated"></div></div></div><hr class="my-6"><h1 class="display-4" id="typography">Typography</h1><h4 class="mt-4">Basics</h4><p><a href="https://material.io/guidelines/style/typography.html">Roboto</a>
 fonts are recommended, you should include them by yourself. Please, don't forget
 to include different font weights in your imports. It's recommended
 to make them look something like this.</p><pre><code>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Roboto:300,400,500&quot; rel=&quot;stylesheet&quot;&gt;
@@ -80,4 +64,10 @@ $(function () {
 })
 $('#discover').click(function () {
   window.location.href = './docs.html'
+})
+$('a[href]').click(function (e) {
+  const h = e.target.href
+  const b = e.target.baseURI
+  if (h === b || h === '' || h === '#')
+    e.preventDefault()
 })</script></body></html>

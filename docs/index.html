@@ -3,23 +3,7 @@
   padding: 3rem;
   margin-bottom: 1rem;
 }
-.mat-menu {
-  margin-top: 3.6rem;
-  min-width: 200px;
-  top: 100px;
-}
-.mat-menu a {
-  font-size: 0.9rem;
-  padding: 0;
-  margin-top: 5px;
-}
-.jumbotron p { font-size: 18px; }
-:target::before {
-  content: "";
-  display: block;
-  height: 100px;
-  margin: -100px 0 0;
-}</style></head><body><nav class="navbar navbar-expand sticky-top navbar-dark bg-dark"><div class="navbar-nav w-100"><a class="nav-link font-weight-light" href="./index.html">MATILDA</a><a class="nav-link font-weight-light" href="./docs.html">DOCS</a><a class="nav-link font-weight-light ml-auto" href="https://github.com/alexquot/matilda">GITHUB</a></div></nav><div class="jumbotron jumbotron-fluid bg-dark text-center"><h1 class="display-4 font-weight-light text-white">Matilda</h1><p class="font-weight-light text-white">Material Design theme for Bootstrap 4</p><button class="mt-5 btn btn-contained-light elevation-2" id="discover">Discover</button></div><div class="container py-5"><h1 class="display-4">About</h1><p>Matilda is a <a href="https://material.io/">Material Design</a> theme for
+.jumbotron p { font-size: 18px; }</style></head><body><nav class="navbar navbar-expand sticky-top navbar-dark bg-dark"><div class="navbar-nav w-100"><a class="nav-link font-weight-light" href="./index.html">MATILDA</a><a class="nav-link font-weight-light" href="./docs.html">DOCS</a><a class="nav-link font-weight-light ml-auto" href="https://github.com/alexquot/matilda">GITHUB</a></div></nav><div class="jumbotron jumbotron-fluid bg-dark text-center"><h1 class="display-4 font-weight-light text-white">Matilda</h1><p class="font-weight-light text-white">Material Design theme for Bootstrap 4</p><button class="mt-5 btn btn-outline-light border-light rounded-0" id="discover">Discover</button></div><div class="container py-5"><h1 class="display-4">About</h1><p>Matilda is a <a href="https://material.io/">Material Design</a> theme for
 <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap 4</a>.
 The goals of this project are to provide a theme that looks similar
 to Material Guidelines, but not to overdose it with complexity.
@@ -36,4 +20,10 @@ $(function () {
 })
 $('#discover').click(function () {
   window.location.href = './docs.html'
+})
+$('a[href]').click(function (e) {
+  const h = e.target.href
+  const b = e.target.baseURI
+  if (h === b || h === '' || h === '#')
+    e.preventDefault()
 })</script></body></html>

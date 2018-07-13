@@ -16,23 +16,7 @@ html
         padding: 3rem;
         margin-bottom: 1rem;
       }
-      .mat-menu {
-        margin-top: 3.6rem;
-        min-width: 200px;
-        top: 100px;
-      }
-      .mat-menu a {
-        font-size: 0.9rem;
-        padding: 0;
-        margin-top: 5px;
-      }
       .jumbotron p { font-size: 18px; }
-      :target::before {
-        content: "";
-        display: block;
-        height: 100px;
-        margin: -100px 0 0;
-      }
   body
     nav.navbar.navbar-expand.sticky-top.navbar-dark.bg-dark
       .navbar-nav.w-100
@@ -50,4 +34,10 @@ html
       })
       $('#discover').click(function () {
         window.location.href = './docs.html'
+      })
+      $('a[href]').click(function (e) {
+        const h = e.target.href
+        const b = e.target.baseURI
+        if (h === b || h === '' || h === '#')
+          e.preventDefault()
       })
