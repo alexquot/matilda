@@ -1,0 +1,11 @@
+.Demo {
+  margin-bottom: 1rem;
+}
+
+.Demo pre {
+  margin: 0;
+}
+
+.Demo pre code {
+  background-color: white;
+}

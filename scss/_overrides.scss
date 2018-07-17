@@ -144,7 +144,11 @@ select.custom-select {
 
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @include button-outline-variant($value, $value, transparentize($value, 0.9));
+    @include button-outline-variant(
+      $value,
+      $value,
+      transparentize($value, 0.9)
+    );
 
     @include btn-any-state {
       color: $value;
@@ -167,11 +171,7 @@ select.custom-select {
   }
 
   .btn-contained-#{$color} {
-    @include button-variant(
-      $value, $value,
-      $value, $value,
-      $value, $value
-    );
+    @include button-variant($value, $value, $value, $value, $value, $value);
 
     @if $enable-ripple {
       @include ripple(color-yiq($value));
@@ -228,7 +228,9 @@ select.custom-select {
       top: 0;
       bottom: 0;
       left: 0;
-      animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+      animation:
+        indeterminate 2.1s
+        cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
       background-color: inherit;
       content: '';
       will-change: left, right;
@@ -239,7 +241,9 @@ select.custom-select {
       top: 0;
       bottom: 0;
       left: 0;
-      animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+      animation:
+        indeterminate-short 2.1s
+        cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
       animation-delay: 1.15s;
       background-color: inherit;
       content: '';
@@ -297,4 +301,17 @@ pre code {
   padding: $pre-code-padding;
   background-color: $pre-bg;
   overflow-x: auto;
+}
+
+//
+// Collapse
+//
+
+.collapse {
+  transition: $transition-collapse;
+}
+
+.collapsing {
+  opacity: 0;
+  transition: $transition-collapse;
 }

@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
-    "scss": "gulp scss",
-    "views": "gulp views",
-    "build": "gulp scss && gulp views",
-    "watch": "npm run build && gulp watch",
+    "build": "gulp build",
+    "start": "npm run build && gulp start",
     "list-custom": "cat scss/_variables.scss | grep Matilda | sed -e 's|\\s*//\\s*Matilda||'"
   },
   "author": "Alex Quot",
@@ -18,7 +16,6 @@
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-pug": "^3.3.0",
     "gulp-sass": "^4.0.1",
     "node-sass-tilde-importer": "^1.0.2",
     "stylelint": "^8.4.0",

@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 const tildeImporter = require('node-sass-tilde-importer');
 const pug = require('gulp-pug');
 
-gulp.task('scss', function () {
+gulp.task('build', function () {
   return gulp.src('./scss/matilda.scss')
     .pipe(
       sass({
@@ -14,24 +14,9 @@ gulp.task('scss', function () {
       }).on('error', sass.logError)
     )
     .pipe(gulp.dest('./dist/'))
-    .pipe(gulp.dest('./docs/'));
+    .pipe(gulp.dest('./site/src/'));
 });
 
-gulp.task('views', function () {
-  return gulp.src('views/*.pug')
-    .pipe(pug({}))
-    .on('error', function (e) {
-      console.log(e);
-    })
-    .pipe(gulp.dest('./docs/'));
-});
-
-gulp.task('watch', function () {
-  gulp.watch([
-    './scss/**/*.scss',
-    './views/**/*.pug'
-  ], [
-    'scss',
-    'views'
-  ]);
+gulp.task('start', function () {
+  gulp.watch(['./scss/**/*.scss'], ['build']);
 });

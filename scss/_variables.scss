@@ -33,6 +33,7 @@ $teal: #009688 !default;
 $cyan: #039be5 !default;
 
 $primary: #6200ee !default;
+//$primary: #00a7b8 !default;
 $secondary: $gray-700 !default;
 $success: $green !default;
 $info: $cyan !default;
@@ -61,9 +62,6 @@ $enable-ripple: true !default; // Matilda
 
 $spacer: 1rem !default;
 
-$card-spacer-y: 0.75rem !default;
-$card-spacer-x: 1.25rem !default;
-
 $spacers: () !default;
 $spacers: map-merge(
   (
@@ -73,11 +71,7 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: ($spacer * 6),
-    'cx': $card-spacer-x,
-    'cxn': -$card-spacer-x,
-    'cy': $card-spacer-y,
-    'cyn': -$card-spacer-y
+    6: ($spacer * 6)
   ),
   $spacers
 );
@@ -112,6 +106,8 @@ $border-radius-sm: $border-radius !default;
 $component-active-color: $white !default;
 $component-active-bg: $primary !default;
 
+$transition-collapse: height 0.3s ease, opacity 0.3s ease;
+
 //
 // Fonts
 //
@@ -130,7 +126,7 @@ $font-weight-bold: 500 !default;
 
 $text-muted: rgba(0, 0, 0, 0.54) !default;
 
-$headings-font-weight: $font-weight-normal !default;
+$headings-font-weight: $font-weight-light !default;
 $headings-color: rgba(0, 0, 0, 0.95) !default;
 
 //
@@ -177,10 +173,7 @@ $btn-active-box-shadow: $btn-box-shadow !default;
 $btn-focus-box-shadow: $btn-box-shadow !default;
 
 $btn-font-weight: 500 !default;
-$btn-transition:
-  color none,
-  background-color none,
-  border-color none,
+$btn-transition: color none, background-color none, border-color none,
   box-shadow 0.15s ease-in-out !default;
 
 $btn-text-transform: uppercase; // Matilda
@@ -296,6 +289,8 @@ $pagination-disabled-bg: transparent !default;
 // Cards
 //
 
+$card-spacer-y: 0.75rem !default;
+$card-spacer-x: 1rem !default;
 $card-border-width: 0rem !default;
 $card-cap-bg: transparent !default;
 $card-bg: $white !default;
@@ -437,14 +432,14 @@ $progress-box-shadow: none !default;
 // Code
 //
 
-$code-bg: rgba(0, 0, 0, 0.07) !default; // Matilda
+$code-bg: $light !default; // Matilda
 $code-color: $body-color !default;
 $code-padding: 0 0.2rem !default; // Matilda
 $code-border-radius: 0 !default; // Matilda
 
-$pre-bg: rgba(0, 0, 0, 0.07); // Matilda
+$pre-bg: $light; // Matilda
 $pre-color: $body-color !default;
 $pre-code-padding: 1rem !default; // Matilda
 
-$kbd-bg: rgba(0, 0, 0, 0.07) !default;
+$kbd-bg: $light !default;
 $kbd-color: $body-color !default;
