@@ -167,6 +167,11 @@ select.custom-select {
       border-width: $border-width;
     }
 
+    &.disabled,
+    &:disabled {
+      border-color: $border-color;
+    }
+
     padding: calc(#{$btn-padding-y} - #{$border-width}) $btn-padding-x;
   }
 
@@ -177,6 +182,10 @@ select.custom-select {
       @include ripple(color-yiq($value));
     }
   }
+}
+
+.btn-group {
+  border-radius: $border-radius;
 }
 
 //
@@ -300,6 +309,7 @@ pre code {
   display: block;
   padding: $pre-code-padding;
   background-color: $pre-bg;
+  border-radius: $pre-code-border-radius;
   overflow-x: auto;
 }
 

@@ -58,7 +58,11 @@ export class Demo extends React.Component<Props, State> {
           />
         </Row>
         <Collapse isOpen={showSource} className="w-100">
-          <SyntaxHighlighter showLineNumbers style={github} language="xml">
+          <SyntaxHighlighter
+            style={github}
+            customStyle={{ backgroundColor: '#f5f5f5' }}
+            language="xml"
+          >
             {html}
           </SyntaxHighlighter>
         </Collapse>

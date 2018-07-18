@@ -435,11 +435,12 @@ $progress-box-shadow: none !default;
 $code-bg: $light !default; // Matilda
 $code-color: $body-color !default;
 $code-padding: 0 0.2rem !default; // Matilda
-$code-border-radius: 0 !default; // Matilda
+$code-border-radius: $border-radius !default; // Matilda
 
 $pre-bg: $light; // Matilda
 $pre-color: $body-color !default;
 $pre-code-padding: 1rem !default; // Matilda
+$pre-code-border-radius: 0 !default; // Matilda
 
 $kbd-bg: $light !default;
 $kbd-color: $body-color !default;
