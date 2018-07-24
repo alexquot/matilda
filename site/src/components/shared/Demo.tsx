@@ -1,10 +1,9 @@
 import * as pretty from 'pretty';
 import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { github } from 'react-syntax-highlighter/styles/hljs';
 import { Col, Collapse, Row } from 'reactstrap';
 import './Demo.css';
+import { Highlight } from './Highlight';
 import { IconButton } from './IconButton';
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
@@ -40,8 +39,13 @@ export class Demo extends React.Component<Props, State> {
 
     return (
       <div className={`Demo ${className || ''}`} {...rest}>
-        <Row noGutters className="bg-light py-4 position-relative">
+        <Row
+          noGutters
+          style={{ padding: '0 70px' }}
+          className="bg-light py-4 position-relative"
+        >
           <Col
+            style={{ maxWidth: '100%' }}
             xs={isCentered ? 'auto' : 12}
             className={isCentered ? 'm-auto' : ''}
           >
@@ -58,13 +62,11 @@ export class Demo extends React.Component<Props, State> {
           />
         </Row>
         <Collapse isOpen={showSource} className="w-100">
-          <SyntaxHighlighter
-            style={github}
-            customStyle={{ backgroundColor: '#f5f5f5' }}
-            language="xml"
-          >
-            {html}
-          </SyntaxHighlighter>
+          <div>
+            <Highlight className="mb-0" language="xml">
+              {html}
+            </Highlight>
+          </div>
         </Collapse>
       </div>
     );

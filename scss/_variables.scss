@@ -2,7 +2,7 @@
 // Matilda
 //
 
-$placeholder-shown-selector: ':placeholder-shown'; // Matilda
+$placeholder-shown-selector: ":placeholder-shown" !default; // Matilda
 
 //
 // Color system
@@ -71,7 +71,7 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    6: ($spacer * 6)
+    6: ($spacer * 4)
   ),
   $spacers
 );
@@ -113,7 +113,7 @@ $transition-collapse: height 0.3s ease, opacity 0.3s ease;
 //
 
 $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
-$font-family-monospace: 'Roboto Mono', monospace !default;
+$font-family-monospace: "Roboto Mono", monospace !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: ($font-size-base * 1.25) !default;
@@ -176,7 +176,7 @@ $btn-font-weight: 500 !default;
 $btn-transition: color none, background-color none, border-color none,
   box-shadow 0.15s ease-in-out !default;
 
-$btn-text-transform: uppercase; // Matilda
+$btn-text-transform: uppercase !default; // Matilda
 
 //
 // Forms
@@ -221,14 +221,14 @@ $custom-select-disabled-bg: transparent !default;
 $custom-select-border-radius: 0rem !default;
 
 $custom-file-text: (
-  en: 'Browse',
-  ru: 'Выбрать'
+  en: "Browse",
+  ru: "Выбрать"
 ) !default;
 
-$form-float-above-top: 0.55rem; // Matilda
-$form-float-container-padding-y: 1.2rem; // Matilda
-$form-float-container-padding-x: 0.7rem; // Matilda
-$form-float-container-filled-bg: rgba(0, 0, 0, 0.05); // Matilda
+$form-float-above-top: 0.55rem !default; // Matilda
+$form-float-container-padding-y: 1.2rem !default; // Matilda
+$form-float-container-padding-x: 0.7rem !default; // Matilda
+$form-float-container-filled-bg: rgba(0, 0, 0, 0.05) !default; // Matilda
 
 //
 // Dropdowns
@@ -437,7 +437,7 @@ $code-color: $body-color !default;
 $code-padding: 0 0.2rem !default; // Matilda
 $code-border-radius: $border-radius !default; // Matilda
 
-$pre-bg: $light; // Matilda
+$pre-bg: $light !default; // Matilda
 $pre-color: $body-color !default;
 $pre-code-padding: 1rem !default; // Matilda
 $pre-code-border-radius: 0 !default; // Matilda
