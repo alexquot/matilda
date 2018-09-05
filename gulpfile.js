@@ -3,7 +3,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const tildeImporter = require('node-sass-tilde-importer');
-const pug = require('gulp-pug');
 
 gulp.task('build', function () {
   return gulp.src('./scss/matilda.scss')
@@ -17,6 +16,6 @@ gulp.task('build', function () {
     .pipe(gulp.dest('./site/src/'));
 });
 
-gulp.task('start', function () {
-  gulp.watch(['./scss/**/*.scss'], ['build']);
+gulp.task('start', function(){
+  gulp.watch('./scss/**/*.scss', gulp.series('build'));
 });
