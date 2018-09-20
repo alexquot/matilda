@@ -19,7 +19,7 @@ export function Header() {
         </NavItem>
         <NavItem className="ml-auto">
           <a
-            href="https://github.com/alexquot/matilda"
+            href="https://github.com/albnnc/matilda"
             className="nav-link font-weight-light"
           >
             GITHUB

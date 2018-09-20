@@ -7,9 +7,9 @@ export function Usage() {
       <h1>Usage</h1>
       <p>
         To begin with you need to install Matilda. It was released in npm under
-        @alexquot/matilda package. If you want you can use jsDelivr CDN, go on
+        @albnnc/matilda package. If you want you can use jsDelivr CDN, go on
         right to the{' '}
-        <a href="https://www.jsdelivr.com/package/npm/@alexquot/matilda">
+        <a href="https://www.jsdelivr.com/package/npm/@albnnc/matilda">
           download page
         </a>. You can also try Matilda and copy-paste the stylesheet into your
         before all other stylesheets.
@@ -17,7 +17,7 @@ export function Usage() {
       <Highlight
         language="xml"
         children={
-          '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@alexquot/matilda/dist/matilda.css" />'
+          '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@albnnc/matilda/dist/matilda.css" />'
         }
       />
       <p>
@@ -26,12 +26,12 @@ export function Usage() {
       </p>
       <Highlight
         language="bash"
-        children="npm install --save @alexquot/matilda"
+        children="npm install --save @albnnc/matilda"
       />
       <p>And import in your SASS code.</p>
       <Highlight
         language="scss"
-        children="@import '@alexquot/matilda/scss/matilda'"
+        children="@import '@albnnc/matilda/scss/matilda'"
       />
 
       <Highlight
