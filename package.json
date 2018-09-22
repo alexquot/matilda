@@ -2,12 +2,11 @@
   "name": "@albnnc/matilda",
   "version": "2.0.2",
   "description": "Material Design theme for Bootstrap 4",
-  "homepage": "https://albnnc.github.io/matilda/",
   "license": "MIT",
   "author": "albnnc",
   "scripts": {
     "build": "parcel build scss/matilda.scss",
-    "predeploy": "parcel build site/index.html -d .tmp/site",
+    "predeploy": "parcel build site/index.html -d .tmp/site --public-url .",
     "deploy": "gh-pages -d .tmp/site",
     "start": "parcel site/index.html -d .tmp/site"
   },
@@ -29,6 +28,7 @@
     "mobx-react-router": "^4.0.5",
     "node-sass": "^4.9.3",
     "parcel-bundler": "^1.9.7",
+    "parcel-plugin-clean-dist": "0.0.6",
     "parcel-plugin-typescript": "^1.0.0",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
