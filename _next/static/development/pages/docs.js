@@ -62801,7 +62801,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Demo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/Demo */ "./shared/Demo.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/components/docs/Buttons.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/components/docs/Buttons.jsx";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -63022,7 +63022,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Demo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/Demo */ "./shared/Demo.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/components/docs/Cards.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/components/docs/Cards.jsx";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -63223,7 +63223,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_Highlight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../shared/Highlight */ "./shared/Highlight.jsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/components/docs/Usage.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/components/docs/Usage.jsx";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
@@ -63317,7 +63317,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_withLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/withLayout */ "./shared/withLayout/index.jsx");
 /* harmony import */ var _components_docs_Usage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/docs/Usage */ "./components/docs/Usage.jsx");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! reactstrap */ "../node_modules/reactstrap/dist/reactstrap.es.js");
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/pages/docs.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/pages/docs.jsx";
 
 
 
@@ -63439,7 +63439,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _IconButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./IconButton */ "./shared/IconButton.jsx");
 /* harmony import */ var _Demo_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Demo.scss */ "./shared/Demo.scss");
 /* harmony import */ var _Demo_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Demo_scss__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/Demo.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/Demo.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -63618,7 +63618,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_syntax_highlighter_styles_hljs__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_syntax_highlighter_styles_hljs__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Highlight_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Highlight.scss */ "./shared/Highlight.scss");
 /* harmony import */ var _Highlight_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Highlight_scss__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/Highlight.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/Highlight.jsx";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -63662,7 +63662,7 @@ function Highlight(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/IconButton.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/IconButton.jsx";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
@@ -63710,7 +63710,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/Footer.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/Footer.jsx";
 
 function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -63760,7 +63760,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "../node_modules/reactstrap/dist/reactstrap.es.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/Header.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/Header.jsx";
 
 
 
@@ -63885,7 +63885,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ignoreEmptyHref__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ignoreEmptyHref */ "./shared/withLayout/ignoreEmptyHref.jsx");
 /* harmony import */ var _scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../scss/matilda.scss */ "../scss/matilda.scss");
 /* harmony import */ var _scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/index.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/index.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 

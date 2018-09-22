@@ -20597,7 +20597,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "../node_modules/reactstrap/dist/reactstrap.es.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/pages/index.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/pages/index.jsx";
 
 
 
@@ -20740,7 +20740,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Footer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/Footer.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/Footer.jsx";
 
 function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -20790,7 +20790,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactstrap */ "../node_modules/reactstrap/dist/reactstrap.es.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/Header.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/Header.jsx";
 
 
 
@@ -20915,7 +20915,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ignoreEmptyHref__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ignoreEmptyHref */ "./shared/withLayout/ignoreEmptyHref.jsx");
 /* harmony import */ var _scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../scss/matilda.scss */ "../scss/matilda.scss");
 /* harmony import */ var _scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_scss_matilda_scss__WEBPACK_IMPORTED_MODULE_6__);
-var _jsxFileName = "/home/albnnc/code/matilda_nextjs/site/shared/withLayout/index.jsx";
+var _jsxFileName = "/home/albnnc/code/matilda/site/shared/withLayout/index.jsx";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
