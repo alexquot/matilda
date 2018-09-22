@@ -20977,11 +20977,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               lineNumber: 18
             },
             __self: this
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-            charSet: "utf-8",
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("base", {
+            href:  false ? undefined : '',
             __source: {
               fileName: _jsxFileName,
               lineNumber: 19
+            },
+            __self: this
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+            charSet: "utf-8",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -20989,13 +20996,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             content: "width=device-width, initial-scale=1, shrink-to-fit=no",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 20
+              lineNumber: 23
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 24
+              lineNumber: 27
             },
             __self: this
           }, "Matilda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -21003,7 +21010,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 25
+              lineNumber: 28
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -21011,7 +21018,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 32
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -21019,50 +21026,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 36
             },
             __self: this
           })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 38
+              lineNumber: 41
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 42
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 40
+              lineNumber: 43
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, this.props, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 44
             },
             __self: this
           })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "mt-auto",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 44
+              lineNumber: 47
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 45
+              lineNumber: 48
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 46
+              lineNumber: 49
             },
             __self: this
           }))));
@@ -21076,7 +21083,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /***/ }),
 
-/***/ 10:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/
@@ -21101,5 +21108,5 @@ module.exports = dll_66a96eeec1c0a72f7c64;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map

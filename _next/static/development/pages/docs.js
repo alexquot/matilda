@@ -28937,7 +28937,7 @@ Tokenizer.prototype._emitPartial = function(value){
 module.exports = Stream;
 
 var Parser = __webpack_require__(/*! ./Parser.js */ "../node_modules/htmlparser2/lib/Parser.js"),
-    WritableStream = __webpack_require__(/*! stream */ "../node_modules/stream-browserify/index.js").Writable || __webpack_require__(/*! readable-stream */ 6).Writable,
+    WritableStream = __webpack_require__(/*! stream */ "../node_modules/stream-browserify/index.js").Writable || __webpack_require__(/*! readable-stream */ 8).Writable,
     StringDecoder = __webpack_require__(/*! string_decoder */ "../node_modules/string_decoder/lib/string_decoder.js").StringDecoder,
     Buffer = __webpack_require__(/*! buffer */ "../node_modules/buffer/index.js").Buffer;
 
@@ -58151,7 +58151,7 @@ util.inherits = __webpack_require__(/*! inherits */ "../node_modules/inherits/in
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(/*! util */ 4);
+var debugUtil = __webpack_require__(/*! util */ 6);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -60040,7 +60040,7 @@ Writable.prototype._destroy = function (err, cb) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__(/*! safe-buffer */ "../node_modules/safe-buffer/index.js").Buffer;
-var util = __webpack_require__(/*! util */ 5);
+var util = __webpack_require__(/*! util */ 7);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -63947,11 +63947,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               lineNumber: 18
             },
             __self: this
-          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-            charSet: "utf-8",
+          }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("base", {
+            href:  false ? undefined : '',
             __source: {
               fileName: _jsxFileName,
               lineNumber: 19
+            },
+            __self: this
+          }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
+            charSet: "utf-8",
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
@@ -63959,13 +63966,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             content: "width=device-width, initial-scale=1, shrink-to-fit=no",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 20
+              lineNumber: 23
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 24
+              lineNumber: 27
             },
             __self: this
           }, "Matilda"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -63973,7 +63980,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 25
+              lineNumber: 28
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -63981,7 +63988,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 32
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -63989,50 +63996,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             rel: "stylesheet",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 36
             },
             __self: this
           })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 38
+              lineNumber: 41
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 39
+              lineNumber: 42
             },
             __self: this
           }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 40
+              lineNumber: 43
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, this.props, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 44
             },
             __self: this
           })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
             className: "mt-auto",
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 44
+              lineNumber: 47
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_1__["Container"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 45
+              lineNumber: 48
             },
             __self: this
           }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 46
+              lineNumber: 49
             },
             __self: this
           }))));
@@ -64046,7 +64053,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/docs.jsx ***!
   \******************************/
@@ -64060,29 +64067,29 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ 4:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 5:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
 /***/ 6:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 7:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 8:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
   \*********************************/
@@ -64104,5 +64111,5 @@ module.exports = dll_66a96eeec1c0a72f7c64;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=docs.js.map
