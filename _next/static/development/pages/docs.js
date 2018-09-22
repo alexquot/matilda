@@ -28937,7 +28937,7 @@ Tokenizer.prototype._emitPartial = function(value){
 module.exports = Stream;
 
 var Parser = __webpack_require__(/*! ./Parser.js */ "../node_modules/htmlparser2/lib/Parser.js"),
-    WritableStream = __webpack_require__(/*! stream */ "../node_modules/stream-browserify/index.js").Writable || __webpack_require__(/*! readable-stream */ 8).Writable,
+    WritableStream = __webpack_require__(/*! stream */ "../node_modules/stream-browserify/index.js").Writable || __webpack_require__(/*! readable-stream */ 6).Writable,
     StringDecoder = __webpack_require__(/*! string_decoder */ "../node_modules/string_decoder/lib/string_decoder.js").StringDecoder,
     Buffer = __webpack_require__(/*! buffer */ "../node_modules/buffer/index.js").Buffer;
 
@@ -58151,7 +58151,7 @@ util.inherits = __webpack_require__(/*! inherits */ "../node_modules/inherits/in
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(/*! util */ 6);
+var debugUtil = __webpack_require__(/*! util */ 4);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -60040,7 +60040,7 @@ Writable.prototype._destroy = function (err, cb) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__(/*! safe-buffer */ "../node_modules/safe-buffer/index.js").Buffer;
-var util = __webpack_require__(/*! util */ 7);
+var util = __webpack_require__(/*! util */ 5);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -63158,7 +63158,7 @@ var _jsxFileName = "/home/albnnc/code/matilda/site/components/docs/Cards.jsx";
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     className: "card-img-top",
-    src: "/static/window.jpg",
+    src: "static/window.jpg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
@@ -63790,7 +63790,7 @@ function Header() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
+    href: ".",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -64053,7 +64053,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/docs.jsx ***!
   \******************************/
@@ -64067,29 +64067,29 @@ return { page: module.exports.default }});
 
 /***/ }),
 
+/***/ 4:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 5:
+/*!**********************!*\
+  !*** util (ignored) ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
 /***/ 6:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 7:
-/*!**********************!*\
-  !*** util (ignored) ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 8:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
   \*********************************/
@@ -64111,5 +64111,5 @@ module.exports = dll_66a96eeec1c0a72f7c64;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=docs.js.map

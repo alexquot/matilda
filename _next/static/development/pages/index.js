@@ -20636,7 +20636,7 @@ function Index() {
     },
     __self: this
   }, "Material Design theme for Bootstrap 4"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/docs",
+    href: "docs",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -20676,7 +20676,7 @@ function Index() {
     },
     __self: this
   }, "For further reading please continue to the", ' ', react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
-    href: "/docs",
+    href: "docs",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -20820,7 +20820,7 @@ function Header() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
+    href: ".",
     passHref: true,
     __source: {
       fileName: _jsxFileName,
@@ -21083,7 +21083,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 /***/ }),
 
-/***/ 3:
+/***/ 10:
 /*!*******************************!*\
   !*** multi ./pages/index.jsx ***!
   \*******************************/
@@ -21108,5 +21108,5 @@ module.exports = dll_66a96eeec1c0a72f7c64;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[10,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map
