@@ -1,7 +1,6 @@
 import React from 'react';
 import withLayout from '@shared/withLayout';
 import { Container, Jumbotron } from 'reactstrap';
-import Link from 'next/link';
 
 function Index() {
   return (
@@ -14,11 +13,13 @@ function Index() {
         >
           Material Design theme for Bootstrap 4
         </p>
-        <Link href="/docs" passHref>
-          <a className="btn btn-outline-light border-white text-white rounded-0 mt-3">
-            Discover
-          </a>
-        </Link>
+
+        <a
+          href="docs"
+          className="btn btn-outline-light border-white text-white rounded-0 mt-3"
+        >
+          Discover
+        </a>
       </Jumbotron>
       <Container>
         <h1 className="mt-5">About</h1>
@@ -31,12 +32,7 @@ function Index() {
           early stage development, but one can find it's quite usable already.
         </p>
         <p>
-          For further reading please continue to the
-          {' '}
-          <Link href="/docs" passHref>
-            <a>Docs</a>
-          </Link>
-          {' '}
+          For further reading please continue to the <a href="docs">Docs</a>{' '}
           page.
         </p>
         <h1 className="mt-5">Helping the project</h1>

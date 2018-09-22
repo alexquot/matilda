@@ -18,7 +18,8 @@ export default function() {
       <Highlight
         language="xml"
         children={
-          '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@albnnc/matilda/dist/matilda.css" />'
+          '<link rel="stylesheet" ' +
+          'href="https://cdn.jsdelivr.net/npm/@albnnc/matilda/dist/matilda.css" />'
         }
       />
       <p>

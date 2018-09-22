@@ -1,7 +1,7 @@
 import Demo from '@shared/Demo';
 import React from 'react';
 
-export default function () {
+export default function() {
   return (
     <div>
       <h1>Cards</h1>
@@ -40,7 +40,7 @@ export default function () {
       </Demo>
       <Demo isCentered>
         <div className="card" style={{ maxWidth: '400px' }}>
-          <img className="card-img-top" src="/static/window.jpg" />
+          <img className="card-img-top" src="static/window.jpg" alt="Window" />
           <div className="card-body">
             <p className="m-0">Lorem ipsum dolor sit amet.</p>
           </div>

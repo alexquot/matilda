@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container } from 'reactstrap';
 import Head from 'next/head';
+import config from '@shared/config';
 import Footer from './Footer';
 import Header from './Header';
 import ignoreEmptyHref from './ignoreEmptyHref';
 import '../../../scss/matilda.scss';
 
-export default function (Component) {
+export default function(Component) {
   return class WithLayout extends React.Component {
     componentDidMount() {
       ignoreEmptyHref();
@@ -16,6 +17,7 @@ export default function (Component) {
       return (
         <div className="d-flex flex-column h-100">
           <Head>
+            <base href={config.baseHref} />
             <meta charSet="utf-8" />
             <meta
               name="viewport"
