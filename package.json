@@ -6,7 +6,9 @@
   "author": "albnnc",
   "scripts": {
     "build": "node-sass scss/matilda.scss --importer=node_modules/node-sass-tilde-importer -o dist",
-    "start": "cd site && next"
+    "start": "cd site && next",
+    "predeploy": "cd site && next build && next export -o .dist",
+    "deploy": "gh-pages -d site/.dist"
   },
   "dependencies": {
     "bootstrap": "^4.1.2"
@@ -22,6 +24,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "gh-pages": "^2.0.0",
     "history": "^4.7.2",
     "mobx": "^5.1.2",
     "mobx-react": "^5.2.8",

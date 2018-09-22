@@ -2,6 +2,7 @@
 
 /.gradle/
 /site/.next
+/site/.dist
 
 /.idea
 /.vscode
