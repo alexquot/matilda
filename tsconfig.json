@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@shared": ["site/components/shared/index"],
+      "@stores": ["site/components/stores/index"],
+      "@images/*": ["site/images/*"]
+    }
+  }
+}

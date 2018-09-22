@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Demo } from '../../../shared';
+import { Demo } from '@shared';
 
 export function Buttons() {
   return (

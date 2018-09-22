@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Highlight } from '../../../shared/Highlight';
+import { Highlight } from '@shared';
 
 export function Usage() {
   return (

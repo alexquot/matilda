@@ -2,11 +2,8 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from './components/App';
 import { ignoreEmptyHref } from './ignoreEmptyHref';
-import { registerServiceWorker } from './registerServiceWorker';
 
-import './index.css';
-import './matilda.css';
+import './index.scss';
 
 ReactDOM.render(<App />, document.getElementById('root') as HTMLElement);
-registerServiceWorker();
 ignoreEmptyHref();

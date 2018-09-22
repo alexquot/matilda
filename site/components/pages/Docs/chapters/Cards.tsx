@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Demo } from '../../../shared';
+import windowImage from '@images/window.jpg';
+import { Demo } from '@shared';
 
 export function Cards() {
   return (
@@ -40,7 +41,7 @@ export function Cards() {
       </Demo>
       <Demo isCentered>
         <div className="card" style={{ maxWidth: '400px' }}>
-          <img className="card-img-top" src="/window.jpg" />
+          <img className="card-img-top" src={windowImage} />
           <div className="card-body">
             <p className="m-0">Lorem ipsum dolor sit amet.</p>
           </div>

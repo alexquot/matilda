@@ -6,7 +6,7 @@ import { Route, Router, Switch } from 'react-router';
 import { Container } from 'reactstrap';
 import { Footer } from './Footer';
 import { Header } from './Header';
-import { Docs, Welcome } from './pages';
+import { Docs, Welcome } from './pages/index';
 
 const browserHistory = createBrowserHistory();
 const routerStore = new RouterStore();

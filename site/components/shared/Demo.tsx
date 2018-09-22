@@ -1,8 +1,8 @@
-import * as pretty from 'pretty';
+import * as toDiffableHtml from 'diffable-html';
 import * as React from 'react';
 import * as ReactDOMServer from 'react-dom/server';
 import { Col, Collapse, Row } from 'reactstrap';
-import './Demo.css';
+import './Demo.scss';
 import { Highlight } from './Highlight';
 import { IconButton } from './IconButton';
 
@@ -35,7 +35,7 @@ export class Demo extends React.Component<Props, State> {
     childrenArray.forEach(
       child => (html += ReactDOMServer.renderToStaticMarkup(child))
     );
-    html = pretty(html);
+    html = toDiffableHtml(html);
 
     return (
       <div className={`Demo ${className || ''}`} {...rest}>

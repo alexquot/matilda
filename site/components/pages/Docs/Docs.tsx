@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Container, Jumbotron } from 'reactstrap';
-import { Demo } from '../../shared';
-import { Buttons, Usage } from './chapters';
-import { Cards } from './chapters/Cards';
+import { Buttons, Cards, Usage } from './chapters';
 
 export class Docs extends React.Component {
   render() {
