@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "albnnc",
   "scripts": {
+    "build": "node-sass scss/matilda.scss --importer=node_modules/node-sass-tilde-importer -o dist",
     "start": "cd site && next"
   },
   "dependencies": {
@@ -27,6 +28,7 @@
     "mobx-react-router": "^4.0.5",
     "next": "^7.0.0",
     "node-sass": "^4.9.3",
+    "node-sass-tilde-importer": "^1.0.2",
     "prettier": "^1.14.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
