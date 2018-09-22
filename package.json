@@ -1,27 +1,40 @@
 {
-  "name": "@alexquot/matilda",
+  "name": "@albnnc/matilda",
   "version": "2.0.2",
   "description": "Material Design theme for Bootstrap 4",
-  "main": "index.js",
-  "scripts": {
-    "lint": "stylelint 'scss/**/*.scss' --syntax scss --fix",
-    "scss": "gulp scss",
-    "views": "gulp views",
-    "build": "gulp scss && gulp views",
-    "watch": "npm run build && gulp watch",
-    "list-custom": "cat scss/_variables.scss | grep Matilda | sed -e 's|\\s*//\\s*Matilda||'"
-  },
-  "author": "Alex Quot",
   "license": "MIT",
+  "author": "albnnc",
+  "scripts": {
+    "start": "parcel site/index.html",
+    "build": "parcel build scss/matilda.scss"
+  },
   "dependencies": {
     "bootstrap": "^4.1.2"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-pug": "^3.3.0",
-    "gulp-sass": "^4.0.1",
-    "node-sass-tilde-importer": "^1.0.2",
-    "stylelint": "^8.4.0",
-    "stylelint-config-idiomatic-order": "^5.0.0"
+    "@types/history": "^4.7.0",
+    "@types/node": "^10.10.1",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
+    "@types/react-router": "^4.0.31",
+    "@types/reactstrap": "^6.0.3",
+    "diffable-html": "^3.0.0",
+    "history": "^4.7.2",
+    "mobx": "^5.1.2",
+    "mobx-react": "^5.2.8",
+    "mobx-react-router": "^4.0.5",
+    "node-sass": "^4.9.3",
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-typescript": "^1.0.0",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-syntax-highlighter": "^8.0.1",
+    "reactstrap": "^6.4.0",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.0.3"
   }
 }

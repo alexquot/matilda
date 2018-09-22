@@ -1,3 +1,8 @@
-/node_modules/
-/.idea/
-/.gradle/
+/node_modules
+
+/.gradle
+/.cache
+/.tmp
+
+/.idea
+/.vscode

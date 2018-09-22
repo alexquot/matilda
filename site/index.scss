@@ -1,0 +1,11 @@
+@import '../scss/matilda.scss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+}
