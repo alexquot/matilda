@@ -7,8 +7,8 @@
   "scripts": {
     "build": "node-sass scss/matilda.scss --importer=node_modules/node-sass-tilde-importer -o dist",
     "start": "cd site && next",
-    "predeploy": "cd site && next build && next export -o .dist",
-    "deploy": "gh-pages -d site/.dist"
+    "predeploy": "cd site && next build && next export -o .dist && touch .dist/.nojekyll",
+    "deploy": "gh-pages -d site/.dist -t"
   },
   "dependencies": {
     "bootstrap": "^4.1.2"

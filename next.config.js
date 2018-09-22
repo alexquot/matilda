@@ -1,2 +1,7 @@
 const withSass = require('@zeit/next-sass');
-module.exports = withSass();
+
+const config = {
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/matilda' : ''
+};
+
+module.exports = withSass(config);
