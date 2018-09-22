@@ -1,0 +1,8 @@
+.Highlight pre {
+  margin: 0 0 1rem; }
+
+.Demo {
+  margin-bottom: 1rem; }
+  .Demo pre code {
+    background-color: white; }
+
