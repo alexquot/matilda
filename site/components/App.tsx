@@ -1,4 +1,4 @@
-import createBrowserHistory from 'history/createBrowserHistory';
+import createHashHistory from 'history/createHashHistory';
 import { Provider } from 'mobx-react';
 import { syncHistoryWithStore, RouterStore } from 'mobx-react-router';
 import * as React from 'react';
@@ -8,9 +8,9 @@ import { Footer } from './Footer';
 import { Header } from './Header';
 import { Docs, Welcome } from './pages/index';
 
-const browserHistory = createBrowserHistory();
+const hashHistory = createHashHistory();
 const routerStore = new RouterStore();
-const history = syncHistoryWithStore(browserHistory, routerStore);
+const history = syncHistoryWithStore(hashHistory, routerStore);
 
 const stores = {
   routerStore: routerStore
