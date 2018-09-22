@@ -1,3 +1,7 @@
 /node_modules/
-/.idea/
+
 /.gradle/
+/site/.next
+
+/.idea
+/.vscode

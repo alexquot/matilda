@@ -1,41 +1,31 @@
-import * as pretty from 'pretty';
-import * as React from 'react';
-import * as ReactDOMServer from 'react-dom/server';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
 import { Col, Collapse, Row } from 'reactstrap';
-import './Demo.css';
-import { Highlight } from './Highlight';
-import { IconButton } from './IconButton';
+import toDiffableHtml from 'diffable-html';
+import Highlight from './Highlight';
+import IconButton from './IconButton';
+import './Demo.scss';
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
-  isCentered?: boolean;
-  children: JSX.Element | JSX.Element[];
-}
-
-interface State {
-  showSource: boolean;
-}
-
-export class Demo extends React.Component<Props, State> {
-  state: State = {
+export default class Demo extends React.Component {
+  state = {
     showSource: false
   };
 
   toggle = () => {
-    this.setState({
-      showSource: !this.state.showSource
-    });
+    const { showSource } = this.state;
+    this.setState({ showSource: !showSource });
   };
 
   render() {
     const { isCentered, children, className, ...rest } = this.props;
     const { showSource } = this.state;
 
-    const childrenArray = React.Children.toArray(children) as JSX.Element[];
+    const childrenArray = React.Children.toArray(children);
     let html = '';
-    childrenArray.forEach(
-      child => (html += ReactDOMServer.renderToStaticMarkup(child))
-    );
-    html = pretty(html);
+    childrenArray.forEach(child => {
+      html += ReactDOMServer.renderToStaticMarkup(child);
+    });
+    html = toDiffableHtml(html);
 
     return (
       <div className={`Demo ${className || ''}`} {...rest}>

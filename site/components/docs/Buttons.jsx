@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Demo } from '../../../shared';
+import Demo from '@shared/Demo';
+import React from 'react';
 
-export function Buttons() {
+export default function() {
   return (
     <div>
       <h1>Buttons</h1>
@@ -10,7 +10,8 @@ export function Buttons() {
         addition there is <code>.btn-contained-*</code> classes to make{' '}
         <a href="https://material.io/design/components/buttons.html#contained-button">
           Material contained buttons
-        </a>. Buttons have the ripple effect and you can also use{' '}
+        </a>
+        . Buttons have the ripple effect and you can also use{' '}
         <code>.ripple</code> class and <code>ripple($color: $black)</code> mixin
         in your SASS code. If you need to make raised button, then you should
         use a contained one and apply <code>.elevation-*</code> class to it.

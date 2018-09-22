@@ -1,7 +1,7 @@
+import Highlight from '@shared/Highlight';
 import * as React from 'react';
-import { Highlight } from '../../../shared/Highlight';
 
-export function Usage() {
+export default function() {
   return (
     <div>
       <h1>Usage</h1>
@@ -11,7 +11,8 @@ export function Usage() {
         right to the{' '}
         <a href="https://www.jsdelivr.com/package/npm/@albnnc/matilda">
           download page
-        </a>. You can also try Matilda and copy-paste the stylesheet into your
+        </a>
+        . You can also try Matilda and copy-paste the stylesheet into your
         before all other stylesheets.
       </p>
       <Highlight

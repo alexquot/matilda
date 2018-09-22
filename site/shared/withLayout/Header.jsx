@@ -1,20 +1,19 @@
-import * as React from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, NavItem } from 'reactstrap';
-import Nav from 'reactstrap/lib/Nav';
+import React from 'react';
+import { Nav, Navbar, NavItem } from 'reactstrap';
+import Link from 'next/link';
 
-export function Header() {
+export default function Header() {
   return (
     <Navbar color="dark" dark expand="xs">
       <Nav tag="div" className="w-100" navbar>
         <NavItem>
-          <Link to="/" className="nav-link font-weight-light">
-            MATILDA
+          <Link href="/" passHref>
+            <a className="nav-link font-weight-light">MATILDA</a>
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="/docs" className="nav-link font-weight-light">
-            DOCS
+          <Link href="/docs" passHref>
+            <a className="nav-link font-weight-light">DOCS</a>
           </Link>
         </NavItem>
         <NavItem className="ml-auto">

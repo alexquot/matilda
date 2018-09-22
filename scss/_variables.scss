@@ -2,7 +2,7 @@
 // Matilda
 //
 
-$placeholder-shown-selector: ":placeholder-shown" !default; // Matilda
+$placeholder-shown-selector: ':placeholder-shown' !default; // Matilda
 
 //
 // Color system
@@ -113,7 +113,7 @@ $transition-collapse: height 0.3s ease, opacity 0.3s ease;
 //
 
 $font-family-base: Roboto, Helvetica, Arial, sans-serif !default;
-$font-family-monospace: "Roboto Mono", monospace !default;
+$font-family-monospace: 'Roboto Mono', monospace !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg: ($font-size-base * 1.25) !default;
@@ -221,8 +221,8 @@ $custom-select-disabled-bg: transparent !default;
 $custom-select-border-radius: 0rem !default;
 
 $custom-file-text: (
-  en: "Browse",
-  ru: "Выбрать"
+  en: 'Browse',
+  ru: 'Выбрать'
 ) !default;
 
 $form-float-above-top: 0.55rem !default; // Matilda
