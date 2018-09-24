@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'matilda';
 
 .DocsLayout {
   .side-navigation {
@@ -39,6 +39,32 @@
 
         &::after {
           background-color: $primary;
+        }
+      }
+    }
+  }
+
+  .next-link-wrapper {
+    display: flex;
+
+    a {
+      margin: 0 auto;
+      color: $text-muted;
+      font-size: $h3-font-size;
+      font-weight: $font-weight-light;
+
+      span {
+        margin-right: 0.5rem;
+        font-size: $font-size-sm;
+        font-weight: $font-weight-light;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        color: $primary;
+
+        span {
+          color: $text-muted;
         }
       }
     }

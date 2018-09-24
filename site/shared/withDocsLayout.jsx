@@ -19,35 +19,51 @@ const chapters = [
   }
 ];
 
-const withDocsMarkup = ({ header, pathname }) => Component => props => (
-  <div className="DocsLayout">
-    <Jumbotron fluid className="bg-dark py-5">
-      <Container>
-        <h1 className="display-4 text-white">{header}</h1>
-      </Container>
-    </Jumbotron>
-    <Container className="pt-4 d-flex">
-      <Row className="w-100">
-        <Col xs={8} md={9}>
-          <Component {...props} />
-        </Col>
-        <Col xs={4} md={3}>
-          <div className="side-navigation">
-            {chapters.map(ch => (
-              <a
-                href={ch.href}
-                key={ch.name}
-                className={pathname.includes(ch.href) ? 'active' : undefined}
-              >
-                {ch.name}
-              </a>
-            ))}
+const withDocsMarkup = ({ header, pathname }) => Component => props => {
+  const openIndex = chapters.findIndex(ch => ch.name === header);
+  const next =
+    openIndex >= 0 && openIndex + 1 < chapters.length
+      ? chapters[openIndex + 1]
+      : undefined;
+
+  return (
+    <div className="DocsLayout">
+      <Jumbotron fluid className="bg-dark py-5">
+        <Container>
+          <h1 className="display-4 text-white">{header}</h1>
+        </Container>
+      </Jumbotron>
+      <Container className="pt-4">
+        <Row>
+          <Col xs={8} md={9}>
+            <Component {...props} />
+          </Col>
+          <Col xs={4} md={3}>
+            <div className="side-navigation">
+              {chapters.map(ch => (
+                <a
+                  href={ch.href}
+                  key={ch.name}
+                  className={pathname.includes(ch.href) ? 'active' : undefined}
+                >
+                  {ch.name}
+                </a>
+              ))}
+            </div>
+          </Col>
+        </Row>
+        {next && (
+          <div className="next-link-wrapper mt-3">
+            <a href={next.href}>
+              <span>Next:</span>
+              {next.name}
+            </a>
           </div>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+        )}
+      </Container>
+    </div>
+  );
+};
 
 // This HOC uses another one, because withLayout and withDocsLayout
 // both have to be the top one HOC. The first one is because
