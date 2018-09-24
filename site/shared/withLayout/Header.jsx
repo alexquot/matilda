@@ -11,7 +11,7 @@ export default function Header() {
           </a>
         </NavItem>
         <NavItem>
-          <a href="docs" className="nav-link font-weight-light">
+          <a href="docs/usage" className="nav-link font-weight-light">
             DOCS
           </a>
         </NavItem>
