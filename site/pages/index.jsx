@@ -15,7 +15,7 @@ function Index() {
         </p>
 
         <a
-          href="docs"
+          href="docs/usage"
           className="btn btn-outline-light border-white text-white rounded-0 mt-3"
         >
           Discover
@@ -32,7 +32,7 @@ function Index() {
           early stage development, but one can find it's quite usable already.
         </p>
         <p>
-          For further reading please continue to the <a href="docs">Docs</a>{' '}
+          For further reading please continue to the <a href="docs/usage">Docs</a>{' '}
           page.
         </p>
         <h1 className="mt-5">Helping the project</h1>

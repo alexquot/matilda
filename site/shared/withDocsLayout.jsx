@@ -7,11 +7,15 @@ import withLayout from './withLayout';
 const chapters = [
   {
     name: 'Usage',
-    href: '/docs/usage'
+    href: 'docs/usage'
   },
   {
     name: 'Buttons',
-    href: '/docs/buttons'
+    href: 'docs/buttons'
+  },
+  {
+    name: 'Cards',
+    href: 'docs/cards'
   }
 ];
 

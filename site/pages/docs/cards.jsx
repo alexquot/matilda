@@ -1,10 +1,10 @@
-import Demo from '@shared/Demo';
 import React from 'react';
+import withDocsLayout from '@shared/withDocsLayout';
+import Demo from '@shared/Demo';
 
-export default function() {
+function Cards() {
   return (
     <div>
-      <h1>Cards</h1>
       <p>
         Cards have 2dp elevation by default if they are not nested. Base
         elements are available for use.
@@ -55,3 +55,5 @@ export default function() {
     </div>
   );
 }
+
+export default withDocsLayout('Cards')(Cards);
