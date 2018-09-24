@@ -5,9 +5,9 @@ import config from '@shared/config';
 import Footer from './Footer';
 import Header from './Header';
 import ignoreEmptyHref from './ignoreEmptyHref';
-import '../../../scss/matilda.scss';
+import './index.scss';
 
-export default function(Component) {
+export default function withLayout(Component) {
   return class WithLayout extends React.Component {
     componentDidMount() {
       ignoreEmptyHref();

@@ -1,0 +1,46 @@
+@import 'variables';
+
+.DocsLayout {
+  .side-navigation {
+    position: sticky;
+    top: 2rem;
+    padding: 0.5rem 0.7rem;
+    background-color: $light;
+
+    a {
+      position: relative;
+      display: block;
+      padding: 0.2rem 0;
+      color: darken($light, 50%);
+      font-size: $font-size-xs;
+      font-weight: $font-weight-normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      &.active,
+      &:hover {
+        &::after {
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          display: block;
+          width: 0.2rem;
+          height: 0.2rem;
+          background-color: darken($light, 50%);
+          border-radius: 100vw;
+          content: '';
+          opacity: 1;
+          transform: translate(-100%, -50%);
+        }
+      }
+
+      &:hover {
+        color: $primary;
+
+        &::after {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}

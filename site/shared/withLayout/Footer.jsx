@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="text-center text-muted small py-4">
         Matilda
         <span className="mx-2">&#183;</span>
-        2017 - 2018
+        2017 – 2018
       </div>
     </div>
   );

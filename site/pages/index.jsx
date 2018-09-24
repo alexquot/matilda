@@ -1,6 +1,6 @@
 import React from 'react';
-import withLayout from '@shared/withLayout';
 import { Container, Jumbotron } from 'reactstrap';
+import withLayout from '@shared/withLayout';
 
 function Index() {
   return (
