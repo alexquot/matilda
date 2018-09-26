@@ -105,7 +105,7 @@ $ambient-elevation-map: (
   box-shadow: elevation-shadow($zValue);
 }
 
-@for $i from 1 through 24 {
+@for $i from 0 through 24 {
   .elevation-#{$i} {
     box-shadow: elevation-shadow($i) !important;
   }

@@ -17,7 +17,7 @@ export default class Demo extends React.Component {
   };
 
   render() {
-    const { isCentered, children, className, ...rest } = this.props;
+    const { isCentered, className, children, Wrapper, ...rest } = this.props;
     const { showSource } = this.state;
 
     const childrenArray = React.Children.toArray(children);
@@ -32,14 +32,14 @@ export default class Demo extends React.Component {
         <Row
           noGutters
           style={{ padding: '0 70px' }}
-          className="bg-light py-4 position-relative"
+          className="bg-light py-5 position-relative"
         >
           <Col
             style={{ maxWidth: '100%' }}
             xs={isCentered ? 'auto' : 12}
             className={isCentered ? 'm-auto' : ''}
           >
-            {children}
+            {Wrapper ? <Wrapper>{children}</Wrapper> : children}
           </Col>
           <IconButton
             icon="code"

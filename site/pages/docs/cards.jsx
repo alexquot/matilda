@@ -27,14 +27,11 @@ function Cards() {
           </div>
           <hr className="m-0" />
           <div className="card-body">
-            <p>
+            <p className="m-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
-            <div className="card">
-              <div className="card-body">Nested cards are flat.</div>
-            </div>
           </div>
         </div>
       </Demo>

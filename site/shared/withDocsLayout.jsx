@@ -16,6 +16,22 @@ const chapters = [
   {
     name: 'Cards',
     href: 'docs/cards'
+  },
+  {
+    name: 'Forms',
+    href: 'docs/forms'
+  },
+  {
+    name: 'Indicators',
+    href: 'docs/indicators'
+  },
+  {
+    name: 'Typography',
+    href: 'docs/typography'
+  },
+  {
+    name: 'Content',
+    href: 'docs/content'
   }
 ];
 
