@@ -46438,6 +46438,18 @@ var chapters = [{
 }, {
   name: 'Cards',
   href: 'docs/cards'
+}, {
+  name: 'Forms',
+  href: 'docs/forms'
+}, {
+  name: 'Indicators',
+  href: 'docs/indicators'
+}, {
+  name: 'Typography',
+  href: 'docs/typography'
+}, {
+  name: 'Content',
+  href: 'docs/content'
 }];
 
 var withDocsMarkup = function withDocsMarkup(_ref) {
@@ -46453,7 +46465,7 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
         className: "DocsLayout",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Jumbotron"], {
@@ -46461,33 +46473,33 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
         className: "bg-dark py-5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 48
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         className: "display-4 text-white",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 49
         },
         __self: this
       }, header))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Container"], {
         className: "pt-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Row"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -46495,13 +46507,13 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
         md: 9,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Component, _extends({}, props, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 55
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Col"], {
@@ -46509,14 +46521,14 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
         md: 3,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "side-navigation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 58
         },
         __self: this
       }, chapters.map(function (ch) {
@@ -46526,7 +46538,7 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
           className: pathname.includes(ch.href) ? 'active' : undefined,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44
+            lineNumber: 60
           },
           __self: this
         }, ch.name);
@@ -46534,20 +46546,20 @@ var withDocsMarkup = function withDocsMarkup(_ref) {
         className: "next-link-wrapper mt-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         href: next.href,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 73
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 74
         },
         __self: this
       }, "Next:"), next.name))));
@@ -46966,7 +46978,7 @@ function withLayout(Component) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!************************************!*\
   !*** multi ./pages/docs/usage.jsx ***!
   \************************************/
@@ -46991,5 +47003,5 @@ module.exports = dll_66a96eeec1c0a72f7c64;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]));;
+},[[3,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=usage.js.map
